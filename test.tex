@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% File: thesis.tex, version 1.9, May 2016
+%%%
+%%% =============================================
+%%% This file contains a template that can be used with the package
+%%% cs.sty and LaTeX2e to produce a thesis that meets the requirements
+%%% of the Computer Science Department from the Technical University of Cluj-Napoca
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,twoside]{report}         
+\usepackage{cs}              
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath,amsbsy}
+\usepackage{amssymb}
+\usepackage[matrix,arrow]{xy}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{romanian} %definitii pentru diacritice; 
+\usepackage{amstext}
+\usepackage{graphics}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+\usepackage{color}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{subcaption}
+
+\usepackage{algorithm2e}
+
+
+% \mastersthesis
+\diplomathesis
+% \leftchapter
+\centerchapter
+% \rightchapter
+\singlespace
+% \oneandhalfspace
+% \doublespace
+
+\renewcommand{\thesisauthor}{Nicoleta COROCEA}    %% Your name.
+\renewcommand{\thesismonth}{Iunie}     %% Your month of graduation.
+\renewcommand{\thesisyear}{2019}      %% Your year of graduation.
+\renewcommand{\thesistitle}{EXPLAINABLE MACHINE LEARNING USING ONTOLOGIES } % Title
+\renewcommand{\thesissupervisor}{Assoc.Prof.Dr.Eng. Adrian GROZA}
+\newcommand{\department}{FACULTATEA DE AUTOMATIC'A 'SI CALCULATOARE\\
+DEPARTAMENTUL CALCULATOARE}
+\newcommand{\thesis}{LUCRARE DE LICEN'T'A}
+\newcommand{\uline}[1]{\rule[0pt]{#1}{0.4pt}}
+%\renewcommand{\thesisdedication}{P'arin'tilor mei}
+\newcommand{\utcnlogo}{\includegraphics[width=15cm]{img/utcn.jpg}}
+\newtheorem{example}{Exemplu}
+\begin{document}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9 \linewidth]{img/properties_subcls_2.png}
+        \caption{Prima parte a subconceptelor clasei $Parameter$}
+    \label{fig:subc_1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.9 \linewidth]{img/properties_subcls_1.png}
+        \caption{A doua parte a subconceptelor clasei $Parameter$}
+    \label{fig:subc_2}
+\end{figure}
+
+
+\end{document}
