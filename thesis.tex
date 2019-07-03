@@ -30,6 +30,7 @@
 \usepackage{listings}
 \usepackage{verbatim}
 \usepackage{subcaption}
+\usepackage[final]{pdfpages}
 
 \usepackage{algorithm2e}
 
@@ -46,8 +47,8 @@
 \renewcommand{\thesisauthor}{Nicoleta COROCEA}    %% Your name.
 \renewcommand{\thesismonth}{Iunie}     %% Your month of graduation.
 \renewcommand{\thesisyear}{2019}      %% Your year of graduation.
-\renewcommand{\thesistitle}{EXPLICAREA 'INV'A'T'ARII AUTOMATE FOLOSIND ONTOLOGII 'SI LIMBAJ NATURAL} % Title
-\renewcommand{\thesissupervisor}{Assoc.Prof.Dr.Eng. Adrian GROZA}
+\renewcommand{\thesistitle}{EXPLICAREA 'INV'A'T'ARII AUTOMATE FOLOSIND LIMBAJ NATURAL 'SI ONTOLOGII} % Title
+\renewcommand{\thesissupervisor}{Conf.Dr.Eng. Adrian GROZA}
 \newcommand{\department}{FACULTATEA DE AUTOMATIC'A 'SI CALCULATOARE\\
 DEPARTAMENTUL CALCULATOARE}
 \newcommand{\thesis}{LUCRARE DE LICEN'T'A}
@@ -219,7 +220,7 @@ Data \hspace{8cm} Nume, Prenume
  
 \section{Descrierea problemei}
 
-C'autarea cuvintelor cheie $"machine\ learning"$ 'in cadrul motorului de c'autare Google a crescut de patru ori 'in utimii 5 ani, ajun\ia nd la noi valori maxime 'in anul 2019, potrivit statisticilor\footnote{https://trends.google.com/trends/}. Amplificarea interesului pentru aria 'inv'a't'arii automate 'si dezvoltarea acestui domeniu este 'incurajat'a de cre'sterea num'arului de date disponibile folosite pentru antrenarea algoritmilor, aproxim\ia ndu-se c'a p\ia n'a 'in 2020, universul digital va atinge 44 de zettabytes. Mai mult de at\ia t, oamenii sunt interesa'ti, dar 'si sceptici cu privire la rezultatele pe care le poate da un algoritm. Acest fapt a condus la $Explainable AI$ (XAI), pentru explicarea procesului prin care un algoritm de 'inv'a'tare automat'a sau orice sistem inteligent ob'tine r'aspunsul.
+C'autarea cuvintelor cheie $"machine\ learning"$ 'in cadrul motorului de c'autare Google a crescut de patru ori 'in ultimii 5 ani, ajun\ia nd la noi valori maxime 'in anul 2019, potrivit statisticilor\footnote{https://trends.google.com/trends/}. Amplificarea interesului pentru aria 'inv'a't'arii automate 'si dezvoltarea acestui domeniu este 'incurajat'a de cre'sterea num'arului de date disponibile folosite pentru antrenarea algoritmilor, aproxim\ia ndu-se c'a p\ia n'a 'in 2020, universul digital va atinge 44 de zettabytes. Mai mult de at\ia t, oamenii sunt interesa'ti, dar 'si sceptici cu privire la rezultatele pe care le poate da un algoritm. Acest fapt a condus la $Explainable AI$ (XAI), pentru explicarea procesului prin care un algoritm de 'inv'a'tare automat'a sau orice sistem inteligent ob'tine r'aspunsul.
 
 Scopul XAI este de a oferi r'aspuns utilizatorului la 'intreb'arile care apar pentru sistemele de tipul cutie neagr'a, cum ar fi 'inv'a'tarea automat'a: "De ce ai f'acut asta? De ce nu ai f'acut altceva? C\ia nd reu'se'sti? C\ia nd e'suezi? C\ia nd e'suezi? C\ia nd pot avea 'incredere 'in tine? Cum corectez o eroare?". Aceste 'intreb'ari se afl'a 'in concordant'a cu urm'atorul citat ~\cite{monroe2018ai} din CACM (tradus): {\it "Este timpul ca inteligen'ta artificial'a s'a dep'a'seasc'a perioada de adolescen't'a, de joc, 'si s'a ia 'in serios no'tiunile de calitate 'si fiabilitate."}.
 
@@ -230,16 +231,20 @@ Domeniul 'stiin'tei datelor responsive~\cite{van2017responsible} este un prim ex
 Multe abord'ari ale explicabilit'a'tii sunt disponibile din ultimii ani, cum ar fi cercetarea lui Toni et al. pentru argumentare 'si explicare~\cite{ANNWithXAI}. 'In mod similar, Gilpin et al.~\cite{Gilpin2019ExplainingLearning} se concentreaz'a asupra metodelor explicabile 'in arhitecturile neurale ad\ia nci, oferind o imagine de anslamblu a interpretabilit'a'tii 'inv'a't'arii automate. Aceste realiz'ari nu se opresc la explicarea 'inv'a't'arii automate, ci se extind 'si spre alte domenii, cum ar fi medicina, biologia 'si limbajul natural. 
 'In domeniul biomedical, Holzinger et al. \cite{Holzinger2018FromAI} sus'tin implementarea 'inv'a't'ari automate interactive, {\it iML}. Aceast'a abordare pune omul 'in bucla algoritmului, combin\ia nd cuno'stin'tele umane cu seturi de date biomedicale incomplete, pentru a ob'tine ceea ce nici un om, nici un computer nu ar putea sa fac'a singur. 'In acest sens, este de 'in'teles necesitatea pentru XAI, explicarea deciziilor sistemelor inteligente. 
 
-'In paralel cu aceste aspecte, odat'a cu tehnologia evolueaz'a 'intreaga popula'tie. Oamenii au devenit din ce 'in ce mai atra'si de tehnologie, iar internetul le of
-In addition to these facts, people have become more and more caught up with technology, and the Internet provides them with a wealth of information sources such as search engines, forums, and online learning platforms. 
-Platforms such as Coursera\footnote{https://www.coursera.org/} or Udemy\footnote{https://www.udemy.com/} provide information that can be accessed at any time, being presented in a pleasant way and encouraging users to improve. The objective of our application is not to make a new e-learning platform, nor to replace it, but to provide a complementary solution. Our application provides support for the exploration of structured information, being a good start for those who want to explore.
-
-\textcolor{green}{xai o realitate in viitorul urmatorilor 5 ani}
+'In paralel cu aceste aspecte, odat'a cu tehnologia evolueaz'a 'intreaga popula'tie. Oamenii au devenit din ce 'in ce mai atra'si de tehnologie, iar internetul le ofer'a o multitudine de surse de informare, cum ar fi motoarele de c'autare, forumuri 'si platforme de 'inv'a'tare online. Platforme precum  Coursera\footnote{https://www.coursera.org/} sau Udemy\footnote{https://www.udemy.com/} furnizeaz'a informa'tii care pot fi accesate 'in orice moment, fiind prezentate 'in mod pl'acut 'si 'incuraj\ia nd utilizatorii s'a se 'imbun'at'a'teasc'a. 'In acest domeniu, sistemele de tip $Question\ Answering$ precum Stack Overflow\footnote{https://stackoverflow.com/} au ca scop complementarea platformelor de 'inv'a'tare online, prin extragerea de informa'tii structurate pe baza 'intreb'arilor.
 
 \section{Conturarea solu'tiei}
+'In domeniul  exist'a diferite abord'ari ale sistemelelor care r'aspund la 'intreb'ari, c\ia t 'si a agen'tilor conversa'tionali. Din perspectiva popularit'a'tii, agen'tii conversa'tionali sunt mult mai populari datorit'a simul'arii conversa'tiei mai aproopiate de cea a oamenilor. Mai mult, ace'stia pot 'indeplini sarcini precum rezerv'ari sau apeluri telefonice. Asisten'ti virtuali precum Cortana 'si Google Assistant sus'tin activit'a'tile utilizatorilor 'in fiecare zi. Ace'stia dau r'aspunsuri scurte 'si nu neap'arat complexe, din domenii variate. Pe de alt'a parte, sistemele de tip $Question Answering$, precum Mind the Book (cu 'intreb'ari despre c'ar'ti) au un avantaj pe planul r'aspunsurilor mai detaliate, concentrate pe un anumit domeniu.
+
+'In lucrarea de fa't'a se dezvolt'a un sistem de tip $Question Answering$ pentru no'tiuni de 'inv'a'tare automat'a care permite utilizatorilor s'a adreseze 'intreb'ari 'in limbaj natural pentru a ob'tine r'aspunsuri. Sistemul este unul explicativ-educativ, oferind transparen't'a 'in ceea ce prive'ste procedeul de extragere al r'aspunsului. Utilizatorilor le este permis s'a vizualizeze elementele ontologiei, s'a introduc'a intreb'ari 'in limbaj natural, s'a editeze interogarea aferent'a 'si sa ob'tin'a r'aspunsul prin dou'a metode. Arhitectura proiectului este dezvoltat'a pe nivele. Framework-ul Quepy este utilizat penntru a asigura translatarea din limbaj natural 'in limbaj de interogare SPARQL. Pentru extragerea r'aspunsului din ontologia OWL se utilizeaz'a ra'tionatorul Pellet 'si libr'aria pentru lucru cu structuri RDF, RDFLib. Interfa'ta utilizator este realizat'a 'in Angular, 'si un modul Spring Boot pune la dispozi'tie puncte terminale pentru utilizarea aplica'tiei.
+
+'In continuare, capitolul~\ref{sec:objectives} cuprinde o descriere detaliat'a a obiectivelor 'si a pozi'tion'arii  sistemului. Studiul bibliografic al domenului problemei este cuprins de capitolul~\ref{sec:bibliographic_research}. Capitolul~\ref{ch:analysis} con'tine o ampl'a descriere a analizei 'si fundament'arii teoretice , urm\ia nd ca 'in capitlul~\ref{sec:proiectare} s'a se descrie arhitectura sistemului 'si implementarea acestuia, solu'tii alternative ale arhitecturii 'si scenarii de utilizare. Capitolul~\ref{sec:testing} 'inglobeaz'a testarea 'si validarea sistemului, capitolul~\ref{sec:instalare} cuprinde instruc'tiuni pentru instalarea sistemului 'si utilizarea acestuia. Capitolul~\ref{sec:concluzii} concluzioneaz'a lucrarea.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Obiectivele Proiectului}
+\label{sec:objectives}
 
 'In acest capitol se vor descrie obiectivele sistemului dezvoltat, c\ia t 'si pozi'tionarea solu'tiei alese. De asemenea, sunt prezentate 'si descrise pe scurt 'si cerin'tele sistemului.
 
@@ -327,23 +332,17 @@ Oferirea transparen'tei 'in aplica'tii este o problem'a des 'int\ia lnit'a, mai 
 
 \section{Cerin'tele sistemului}
 
-\subsection{Cerin'te func'tionale}
+Cerin'tele sistemului constau 'in cerin'te func'tionale ce trebuie 'indeplinite pentru o bun'a experien't'a de utilizare 'si pentru a fi 'in concordan'ta cu obiectivele proiectului. Acestea sunt:
 
 \begin{itemize}
     \item {\it Translatarea limbajului natural 'in SPARQL} - Sistemul trebuie s'a pun'a la dispozi'tie un mecanism de translatare a 'intreb'arilor din limbaj natural 'in limbaj de interogare SPARQL, precum 'si o modalitate de editare ulterioar'a a interog'arilor.
     \item {\it Interogarea\ ontologiei} -  Sistemul trebuie s'a permit'a interogarea ontologiei utiliz\ia nd limbajul de interogare SPARQL destinat ontologiilor 'si s'a ofere r'aspunsuri pe baza resurselor conceptualizate 'in baza de cuno'stin'te, utiliz\ia nd libr'aria Pellet 'si libr'aria RDFLib.
-    \item {\it Permite\ vizualizarea\ elementelor\ ontologiei} - Sistemul trebuie s'a ofere capabilitatea de a expune, prin intermediul interfe'tei utilizator, a tuturor elementelor din care este constituit'a ontologia.
-\end{itemize}
-\subsection{Cerin'te nonfunc'tionale}
-\begin{itemize}
-    \item {\it Utilizabilitate} - Proiectarea sistemului 'si a interfe'tei utilizator se va face urm'arind simplitatea de utilizare. Clien'tii novici pot 'incepe utilizarea cu pu'tin instructaj asupra utiliz'arii aplica'tiei.
-    \item {\it Toleran'ta\ la\ e'sec} - Sistemul este construit 'in a'sa fel 'inc\ia t, 'in cazul in care acesta e'sueaz'a 'in interpretarea intreb'arii sau pentru g'asirea unui r'aspuns, utilizatorul va fi rugat s'a repete 'intrebarea sub o alta forma sau s'a verifice interogarea.
-    \item {\it Securitate} - Datele ontologiei pot fi vizualizate, fiind publice utilizatorilor, dar nu se va permite realizarea interog'arilor care pot modifica  sau altera starea acestora.
-    \item {\it Explicativ} - Realizarea sistemului va 'tine cont de transparen'ta de realizare a opera'tiilor, c'at si de dreptul utilizatorului de a fi implicat 'in procesul de decizie.
+    \item {\it Facilitarea\ vizualiz'arii} - Sistemul trebuie s'a ofere capabilitatea de a expune, prin intermediul interfe'tei utilizator, a tuturor elementelor din care este constituit'a ontologia.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Studiu Bibliografic}
+\label{sec:bibliographic_research}
 
 \section{Explicarea deciziilor sistemelor inteligente}
 'In ultima decad'a, mai ales 'incep\ia nd cu anul 2012, sistemele bazate pe inteligen't'a artificial'a 'si 'inv'a'tare automat'a au evoluat 'si au atins performan'te care oamenii ar fi crezut c'a sunt de neatins. Cre'sterea cantit'a'tii de informa'tii disponibile pentru a antrena algoritmi, c\ia t 'si cre'sterea puterii computa'tionale a calculatoarelor 'si optimiz'ari noi aduse algoritmilor au condus la avansarea domeniului.
@@ -382,8 +381,9 @@ Lawrence Phillips et. al \cite{PhillipsWorkshopIN-TERPRETABILITY} a dezvoltat m'
 
 
 \subsection{Reprezentarea cuno'stin'telor}
+\label{sec:rep_Cun}
 
-Reprezentarea cuno'stin'telor reprezint'a un subdomeniu la inteligen'tei artificale care se ocup'a cu structurarea informa'tiilor cu scopul de a fi utilizate mai departe de calculatoare pentru a rezolva probleme complexe. Datorit'a structur'arii informa'tiilor algoritmii pot fi mai u'sor implementa'ti 'si men'tinu'ti.
+Reprezentarea cuno'stin'telor(KR) reprezint'a un subdomeniu la inteligen'tei artificale care se ocup'a cu structurarea informa'tiilor cu scopul de a fi utilizate mai departe de calculatoare pentru a rezolva probleme complexe. Datorit'a structur'arii informa'tiilor algoritmii pot fi mai u'sor implementa'ti 'si men'tinu'ti.
 
 Potrivit \cite{SharmaATechniques},\cite{javap_kr} tehnicile de reprezentare a cuno'stin'telor sunt: 
 
@@ -395,6 +395,26 @@ Potrivit \cite{SharmaATechniques},\cite{javap_kr} tehnicile de reprezentare a cu
 \end{itemize}
 
 
+\subsection{Logici de descriere}
+
+Logica descriptiv'a (DL) reprezint'a un limbaj formal  pentru reprezentarea cuno'stin'telor 'si ra'tionarea asupra acestora.
+Franz Baader prezint'a bazele acesteia 'in \cite{BaaderBasicLogics}. DL estte un formalism pentru reprezentarea cuno'stin'telor domeniului unei aplica'tii. 'In primul r\ia nd define'ste conceptele relevante ale domeniului, iar apoi, pe baza conceptelor, se definesc propriet'a'tile obiectelor 'si indivizii. 
+Logicile de descriere sunt descenden'ti ai re'telelor structurate de mo'stenire care 'incercau 'sa dep'a'seasc'a neajunsurile re'telelor 'si cadrelor, amintite 'in sec'tiunea~\ref{sec:rep_Cun}.
+
+DL este bazat pe urm'atoarele concepte ce 'il definesc:
+\begin{itemize}
+    \item Elementele de baz'a sintactice sunt $conceptele\ atomice$, sub form'a de predicate unare.
+    \item Puterea expresiv'a a limbajului DL este limitat'a prin folosirea unui set restr\ia ns de constructori pentru a construi concepte 'si roluri complexe.
+    \item Cuno'stin'tele implicite despre concepte 'si indivizi pot fi deduse automat cu ajutorul procedurilor de inferen't'a.
+\end{itemize}
+
+Sistemele de reprezentare a cuno'stin'telor care sunt bazate pe logici de descriere pun la dispozi'tie facilit'a'ti pentru a dezvolta baze de cuno'stin'te 'si pentru a le manipula. 
+
+Limbajele din familia $AL$(attributive language) fac parte din limbajele de descriere 'si sunt utilizate 'in dezvoltarea bazelor de cuno'stin'te.
+O baz'a de cuno'stin'te este format'a din ABox si TBox. TBox cuprinde $terminologia$, adic'a vocabularul domeniului aplica'tiei. ABox cuprinde {\it aser'tii}, adic'a indivizi. Indivizii sunt repartiza'ti 'in seturi numite $concepte$. 'Intre ace'stia exist'a leg'aturi binare numite $roluri$. Pe l\ia nga cuno'stin'tele pe care le memoreaz'a, o baz'a de cuno'stin'te ofer'a servicii pentru a ra'tiona pe aceste cuno'stin'te. Principalele ra'tionamente sunt testarea {\it satisfiabilit'a'tii} 'si a {\it consisten'tei}. Prin satisfiabilitate se asigur'a c'a baza de cuno'stin'te nu con'tine elemente contradictorii. Consisten'ta asigur'a c'a instan'tele bazei de cuno'stin'te apar'tin unui concept.
+
+Problemele de inferen't'a por fi reduse la probleme de consisten'ta pentru ABox, cu condi'tia ca logica de descriere s'a permit'a utilizarea conjunc'tiei sau neg'arii. Pentru sistemele DL care nu permit negarea, se utilizeaz'a $algoritmi\ de\ subsumare$ pentru a realiza inferen'ta. Ace'sti algoritmi compar'a structura sintactic'a a descrierilor conceptelor. Pentru bazele de cuno'stin'te cu DL care au nega'tie 'si conjunc'tie, nu se pot utiliza algoritmii de subsumare. 'In aceste cazuri, se folosesc $algoritmii\ tableau$. Acest tip de algoritmi folosesc negarea pentru a reduce subsump'tiile la insatisfiabilitatea descrierilor conceptelor.
+
 
 
 \subsection{Ra'tionamentul pe cuno'stin'te}
@@ -404,6 +424,7 @@ Dezvoltarea ra'tionamentului pe cuno'stin'te a ap'arut din nevoia de a deduce c'
 Mecanismele de inferen'ta sunt sisteme care utilizeaz'a axiome logice asupra unei baze de cuno'stin'te pentru a ob'tine informa'tii noi, pe baza celor existente. Pellet\cite{SirinPellet:Reasoner} este un reasoner semantic, iar acesta, la baz'a, are un mecanism pentru inferen't'a. 'in plus fa't'a de acestea, un reasoner semantic folose'ste mai multe mecanisme 'si, de multe ori, exprim'a regulile de inferen't'a 'in limbajul unei ontologii sau in logic'a descriptiv'a. O alt'a perspectiv'a asupra reasonerelor include reasonerele probabilistice, cum ar fi sistemul non-axiomatic pentru ra'tionament al lui Pey Wang \cite{nonaxiomaticreasoner}. Reasonerul lui Pey Wang r'aspunde 'intreb'arilor pe baza cuno'stin'telor insertate original de c'atre user. Acest sistem, deosebit fa't'a de abord'arile obi'snuite, are abliltatea de a 'inv'a'ta din expereien't'a 'si de a func'tiona cu informa'tii 'si resurse insuficiente.
 
 Demostratoarele de teoreme reprezint'a o metod'a slab'a comparativ cu mecanismele pentru inferen'ta deoarece nu fac uz de cuno'stin'tele din domeniu. Acestea func'tioneaz'a corect atunci c'and datele sunt reprezentate de axiome logice. 'In acest domeniu, Prover9\footnote{Prover9 https://www.cs.unm.edu/~mccune/prover9/manual/2009-11A/} este un demonstrator de teoreme pentru $first\ order\ logic$ 'si $equational\ logic$.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -891,6 +912,7 @@ Potrivit analizei f'acute de Stein Seibu \cite{SteinSaebuOptiqueNLQF:Technologie
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Proiectare de Detaliu 'si Implementare}
+\label{sec:proiectare}
 
 \section{Arhitectura sistemului}
 
@@ -1362,12 +1384,30 @@ Arhitectura alternativ'a propus'a permite utilizarea modulului $Translator\ Serv
     \label{fig:usecases}
 \end{figure}
 
-'In continuare, vom ilustra capabilit'a'tile sistemului 'intr-un caz de utilizare.
+'In continuare, vom ilustra capabilit'a'tile sistemului 'in cazurile de utilizare care con'tin 'intreb'ari complexe ce fac uz de 'imbun'at'a'tirile aduse la framework-ul Quepy.
 
-Vom considera c'a utilizatorul ca'a utilizatorul introduce urm'atoarea 'intrebare:
+Fie regulile $R_1$-$R_4$ care formalizeaz'a regulile de parsare ale 'intreb'arilor introduse. Semnifica'tia acestora este detaliat'a 'in tabelul ~\ref{tab:rules}.
 
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline \hline
+      Regul'a & Interpretare\\[0.5ex] \hline 
+     $R_1$ & afi'seaz'a instan'tele clasei date \\[1ex]
+  $R_2$ & algoritmi care rezolv'a problema precizat'a 'SI au metoda de 'inv'a'tare dat'a\\[1ex]
+  $R_3$ & algoritmi potrivi'ti pentru o caracteristic'a a setului de date SAU o alt'a caracteristic'a\\[1ex]
+  $R_4$ & algoritmi care NU au metoda de 'inv'a'tare \\[1ex]
+  \hline
+    \end{tabular}
+    \caption{Semnifica'tia regulilor date}
+    \label{tab:rules}
+\end{table}
+
+Vom considera urm'atorul 'sir de 'intreb'ari introduse de utilizator, descrise de facilitatea pe care o 'indeplinesc:
+
+\subsubsection{Afi'sarea indivizilor unui concept}
 \begin{center}
-{\it $Q_1$: Which are the instances of algorithms?}
+{\it $Q_1$: Which are the instances of Algorithms?}
 \end{center}
 
 'Intrebarea poate fi formulat'a de asemenea ca {\it"individuals of Algorithm"},
@@ -1427,7 +1467,7 @@ R'aspunsul este ob'tinut pe baza urm'atoarelor axiome generale de incluziune 'in
 \end{tabular}
 \vspace*{0.3cm}
 
-Din axiomele (1) 'si (2) Pellet deduce c'a $GaussianProcess$, $DecisionTree$ 'si $SupportVectorMachine$ sunt subconcepte ale clasei $Algorithm$. Fiind date axiomele (4), (5) 'si (6), Pellet infer'a c'a $gaussianProcessRegressor$, $oneCLassSVM$ 'si $decisionTreeClassifier$ sunt de asemenea indivizi ai conceptului $Algorithm$. 
+Din axiomele (1) 'si (2) Pellet deduce c'a $GaussianProcess$, $DecisionTree$ 'si $Support$ $VectorMachine$ sunt subconcepte ale clasei $Algorithm$. Fiind date axiomele (4), (5) 'si (6), Pellet infer'a c'a $gaussianProcessRegressor$, $oneCLassSVM$ 'si $decisionTreeClassifier$ sunt de asemenea indivizi ai conceptului $Algorithm$. 
 
 Diferit, utiliz\ia nd RDFLib, r'aspunsul este o lista goal'a deoarece RDFLib nu poate s'a fac'a reasoning pe axiomele date 'si nu poate deduce c'a $gaussianProcessRegressor$, $oneCLassSVM$ 'si $decisionTreeClassifier$ sunt indivizi ai clasei $Algorithm$. 
 'In acest caz, dac'a am fi dorit indivizii clasei $DecisionTree$ atunci RDFLib ar fi putut r'aspunde corect cu o list'a de indivizi.
@@ -1455,10 +1495,273 @@ R'aspunsul $a_2$ ob'tinut cu RDFLib este:
     {"x0": "id3"}]
 \end{lstlisting}
 \end{center}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Testare 'si Validare}
 
-\subsection{Performan't'a}
+\subsubsection{Utilizarea operatorului AND}
+
+{\it $Q_2$ algorithm that solves classification problem and has supervised learning method and has feature complexInteractions}
+
+Poate fi scris'a 'si ca {\it "algorithm that solves classification and has supervised and complexInteractions" }. Regula Quepy $R_2$, conduce la urm'atoarea interogare SPARQL:
+\begin{figure}[h]
+\begin{footnotesize}
+\begin{lstlisting}[captionpos=b, caption=Q2 SPARQL query, label=lst:sparql,  basicstyle=\ttfamily,frame=single]
+SELECT DISTINCT ?x0 WHERE {
+  ?x0 rdf:type ml:Algorithm.
+  ?x0 ml:has-learning-method ?x1.
+  ?x0 ml:solves ?x2.
+  ?x0 ml:has-feature-characteristic ?x3.
+  ?x1 rdf:type ml:LearningMethod.
+  FILTER(?x1 = ml:supervised 
+        && ?x2 = ml:classification 
+        && ?x3 = ml:complexInteractions).
+  ?x2 rdf:type ml:LearningProblem.
+  ?x3 rdf:type ml:Feature.
+}
+\end{lstlisting}
+\end{footnotesize}
+\end{figure}
+
+$?x0$ 'inlocuie'ste un individ al conceptului $Algorithm$. $?x1$ re'tine individul $supervised$ al conceptului $LearningMethod$, $?x2$ re'tine individul $classification$ al conceptului $LearningProblem$ 'si $?x3$ 'tine locul pentru individul $complexInteractions$ care este de tipul $Feature$.
+
+R'aspunsul $a_3$ dat de Pellet este
+\newline
+\begin{lstlisting}[basicstyle=\footnotesize]
+{"x0": { "value": "decisionTreeClassifier" }}
+\end{lstlisting}
+
+Este ob'tinut pe baza urm'atorilor pa'si:
+
+\vspace*{0.3cm}
+\begin{small}
+\begin{tabular}{ll}
+7. & $DecisionTree  \sqsubseteq Algorithm$\\
+8. & $decisionTreeClassifier:DecisionTree$\\
+9. & $supervised: LearningMethod$\\
+10. & $classification: LearningProblem$\\
+11. & $complexInteractions: Feature$\\
+12. & $(decisionTreeClassifier,supervised)$\\
+    & $     : hasLearningMethod$\\
+13. & $(decisionTreeClassifier,classification): solves$\\
+14. & $(decisionTreeClassifier,complexInteractions)$\\
+    & $     :hasFeatureCharacteristic$\\
+\end{tabular}
+\end{small}
+\vspace*{0.3cm}
+
+Aici, $decisionTreeClassifier$ este definit ca instan'ta a $Algorithm$. Bazat pe axiomele 12-14 este selectat ca rezultat corect de c'atre Pellet. Folosind RDFLib, r'aspunsul este o list'a goal'a deoarece  $decisionTreeClassifier$ nu este o instan't'a a conceptului $Algorithm$.
+
+\subsubsection{Utilizarea operatorului OR}
+{\it $Q_3$ Algorithms suitable for nonLinearModels or shortDocuments data characteristics}
+
+Aceast'a 'intrebare poate fi scris'a ca {\it"algorithms suitable for nonLinearModels or shortDocuments"} 'si va conduce la acela'si rezultat. Urm'atoarea interogare:
+
+\begin{figure}[h]
+\begin{footnotesize}
+\begin{lstlisting}[captionpos=b, caption=Q3 SPARQL query, label=lst:sparql,  basicstyle=\ttfamily,frame=single]
+SELECT DISTINCT ?x0 WHERE {
+ ?x0 rdf:type ml:Algorithm.
+ ?x0 ml:suitable-for ?x1.
+ ?x0 ml:suitable-for ?x2.
+ ?x1 rdf:type ml:DataCharacteristic.
+ FILTER(?x1 IN ( ml:nonLinearModels, ml:shortDocs)).
+ ?x2 rdf:type ml:DataCharacteristic.}
+\end{lstlisting}
+\end{footnotesize}
+\end{figure}
+
+este ob'tinut'a pe baza $R_3$ (formalizat'a 'in tabelul ~\ref{tab:rules}).
+
+Variabila $?x0$ re'tine individul conceptului $Algorithm$. Variabila $?x1$ 'inlocuie'ste un individ din clasa $DataCharacteristic$ care este $nonLinearModels$ sau $shortDocs$. R'aspunsul $a_4$ dat de Pellet este:
+\begin{lstlisting}[basicstyle=\footnotesize]
+[
+      {"x0": { "value": "mlpClassifier" }} ,
+      {"x0": { "value": "mlpRegressor" }} ,
+      {"x0": { "value": "decisionTreeClassifier" }} ,
+      {"x0": { "value": "bernoulliNaiveBayes" }}
+]
+\end{lstlisting}
+
+Vom prezenta axiomele pe baza c'arora $mlpClassifier$ 'si $bernoulliNaiveBayes$ sunt deduse ca r'aspunsuri corecte:
+
+\vspace*{0.3cm}
+\begin{small}
+\begin{tabular}{ll}
+15. & $NeuralNetworkModel  \sqsubseteq Algorithm$\\
+16. & $NaiveBayes  \sqsubseteq Algorithm$\\
+17. & $mlpClassifier:NeuralNetworkModel$\\
+18. & $bernoulliNaiveBayes: NaiveBayes$\\
+19. & $nonLinearModels: DataCharacteristic$\\
+20. & $shortDocs: DataCharacteristic$\\
+21. & $(mlpClassifier, nonLinearModels):suitable-for$\\
+22. & $(bernoulliNaiveBayes, shortDocs):suitable-for$\\
+\end{tabular}
+\end{small}
+\vspace*{0.3cm}
+
+Indivizii da'ti pentru $DataCharacteristics$ sunt $nonLinearModels$ 'si $shortDocs$. Bazat pe cerere, instan'tele corespunz'atoare ale $Algorithm$ trebuie s'a satisfac'a proprietatea $suitable-for$. Pellet identific'a $mlpClassifier$ 'si $bernoulliNaiveBayes$ ca instan'te dorite ale $Algorithm$ bazat pe axiomele 15-18 'si 21-22. 
+RDFLib nu poate afla r'aspusnul corect deoarece nu poate ra'tiona.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Utilizarea operatorului MINUS}
+{\it $Q_4$ algorithms that do not have supervised learning method}
+
+Dac'a aceast'a interogare se scrie ca {\it"algorithm that does not have supervised"} se va ob'tine acela'si rezultat. $R_4$ (formalizat'a in tabelul ~\ref{tab:rules}) este regula de identificare Quepy pentru urm'atoarea expresie SPARQL:
+
+\begin{figure}[h]
+\begin{footnotesize}
+\begin{lstlisting}[captionpos=b, caption=Q4 SPARQL query, label=lst:sparql,  basicstyle=\ttfamily,frame=single]
+SELECT DISTINCT ?x0 WHERE {
+  ?x0 rdf:type ml:Algorithm.
+  MINUS { ?x0  ml:has-learning-method ?x1.   FILTER(?x1 = ml:supervised).}.
+  ?x1 rdf:type  ml:LearningMethod.
+}
+\end{lstlisting}
+\end{footnotesize}
+\end{figure}
+%\vspace{-0.5em}
+Variabila $?x0$ re'tine indivizii conceptului $Algorithm$. Variabila $?x1$ 'inlocuie'ste $supervised$ care are tipul $LearningMethod$. $?x0$ nu trebuie s'a aib'a metoda de 'inv'a'tare $?x1$.
+
+R'aspunsul dat de Pellet este $a_6$:
+
+\begin{lstlisting}[basicstyle=\footnotesize]
+[{"x0": { "value": "oneClassSVM" }} ,
+ ...
+ {"x0": { "value": "labelPropagation" } }]
+\end{lstlisting}
+
+Axiomele utilizate pentru $labelPropagation$ sunt:
+
+\vspace*{0.3cm}
+\begin{small}
+\begin{tabular}{ll}
+23. & $LabelPropagation  \sqsubseteq Algorithm$\\
+24. & $labelPropagation:LabelPropagation$\\
+25. & $supervised: LearningMethod$\\
+26. & $semiSuperviseds: LearningMethod$\\
+27. & $(labelPropagation, semiSupervised)$\\
+    & $:has-learning-method$\\
+\end{tabular}
+\end{small}
+\vspace*{0.3cm}
+
+Individul $labelPropagation$ este de tipul $LabelPropagation$ 'si, fiind date axiomele 23-24, este de tip $Algorithm$ automat. Prin interogarea SPARQL curent'a, dorim ca instan'tele clasei $Algorithm$ care nu au metoda de 'inv'a'tare $supervised$. Cu ajutorul axiomelor 26-27, $labelPropagation$ este definit ca r'aspunsul corect pentru metoda de 'inv'a'tare $semiSupervised$.
+Datorit'a faptului c'a RDFLib nu poate infera axioma precum 23, nu poate da un r'aspuns.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Testare 'si Validare}\label{sec:testing}
+
+\section{Testare}
+'In cadrul test'arii am verificat fiecare punct terminal pentru a analiza cum se comport'a 'in cazuri specifice de utilizare, c\ia t 'si 'in momentele 'in care sunt introduse date incorecte.
+
+Testele au fost realizate 'tin\ia nd cont de separarea opera'tiilor pe care le pot face utilizatorii din interfa't'a.
+
+\subsubsection{Testarea func'tion'arii translat'arii din limbaj natural 'in SPARQL}
+
+Utilizeaz'a punctul terminal $/translateQuery$. 
+
+Pentru analiza cazului corect de func'tionare, consider'am 'intrebarea de test:
+\begin{center}
+$T_{11}\ :\ List\ DecisionTree\ individuals$.
+\end{center}
+
+Ac'tion\ia nd butonul pentru translatare, r'aspunsul ob'tinut este prezent 'in listarea ~\ref{lst:test11}:
+
+\begin{figure}[h]
+\begin{footnotesize}
+\begin{lstlisting}[captionpos=b, caption=R'aspuns SPARQL pentru T_{11}, label=lst:test11,  basicstyle=\ttfamily,frame=single]
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX quepy: <http://www.machinalis.com/quepy#>
+PREFIX ml: <http://www.semanticweb.org/machine-learning-ontology#>
+
+SELECT DISTINCT ?x0 WHERE {
+  ?x0 rdf:type ml:DecisionTree.
+}
+\end{lstlisting}
+\end{footnotesize}
+\end{figure}
+
+Pentru analiza comportamentului 'in cazul 'in care nu se introduce o intrebare valid'a, consider'am:
+\begin{center}
+$T_{12}\ :\ TEST\ 12$.
+\end{center}
+
+R'aspunsul primit este o avertizare: {\it Could not translate question to SPARQL query!}
+
+'In ambele cazuri, sistemul s-a comportat a'sa cum era de a'steptat.
+
+\subsubsection{Testarea func'tion'arii interog'arilor utiliz\ia nd Pellet}
+
+Interogarea ontologiei folosind Pellet utilizeaz'a punctul terminal $/runQueryWithPellet$.
+O intrare valid'a pentru acest caz este interogarea afisat'a 'in ~\ref{lst:test11}. Raspunsul ob'tinut pentru aceast'a interogare este:
+\begin{lstlisting}[basicstyle=\footnotesize]
+[
+ {"x0": { "value": "c5dot0" }} ,
+ {"x0": { "value": "cart" }} ,
+ {"x0": { "value": "c4dot5" }} ,
+ {"x0": { "value": "id3" }} ,
+ { "x0": { "value": "decisionTreeRegressor" }} ,
+ {"x0": { "value": "decisionTreeClassifier" }}
+]
+\end{lstlisting}
+
+Pentru o interogare goal'a cum ar fi o interogare care con'tine numai spa'tii, r'aspunsul const'a intr-un avertisment:  {\it This is not a valid SPARQL query!}.
+
+Pentru o interogare cu erori de sintax'a sau din care lipse'ste prefixul, cum ar fi listarea ~\ref{lst:test2}:
+
+\begin{figure}[h]
+\begin{footnotesize}
+\begin{lstlisting}[captionpos=b, caption=Interogare SPARQL defectuoas'a, label=lst:test2,  basicstyle=\ttfamily,frame=single]
+SELECT DISTINCT ?x0 WHERE {
+  ?x0 rdf:type ml:DecisionTree.
+}
+\end{lstlisting}
+\end{footnotesize}
+\end{figure}
+
+
+R'aspunsul ob'tinut este avertismentul din cazul precedent:  {\it This is not a valid SPARQL query!}.
+
+'In cazul 'in care se cer instan'tele unei clase DecisionTree\_TEST inexistente, atunci sistemul semnaleaz'a o avertizare: {\it Undefined class used in query: DecisionTree\_TEST}.
+
+
+\subsubsection{Testarea func'tion'arii interog'arilor folosind RDFLib}
+
+
+Interogarea ontologiei folosind RDFLib utilizeaz'a punctul terminal $/runQueryWithRDFLib$.
+Listarea ~\ref{lst:test11} reprezint'a o intrare valid'a pentru acest caz. Raspunsul ob'tinut pentru aceast'a interogare este:
+\begin{lstlisting}[basicstyle=\footnotesize]
+[
+ { "x0": "c5dot0"}, 
+ {"x0": "decisionTreeRegressor"}, 
+ {"x0": "c4dot5" }, 
+ {"x0": "cart"}, 
+ {"x0": "decisionTreeClassifier"}, 
+ {"x0": "id3"}
+]
+
+\end{lstlisting}
+
+Pentru o interogare goal'a cum ar fi o interogare care con'tine numai spa'tii, r'aspunsul const'a intr-un avertisment:  {\it  Something went wrong and your query could not be processed!}.
+
+Pentru o interogare cu erori de sintax'a sau din care lipse'ste prefixul, cum ar fi listarea ~\ref{lst:test2}, RDFLib
+
+R'aspunsul ob'tinut este avertismentul din cazul precedent:  {\it Something went wrong and your query could not be processed!}.
+
+'In cazul 'in care se cer instan'tele unei clase DecisionTree\_TEST inexistente, atunci sistemul nu poate identifica gre'seala 'si va returna o list'a goal'a.
+
+\subsubsection{Testarea func'tion'arii solicit'arii claselor, rolurilor 'si instan'telor ontologiei}
+Pentru a ob'tine clasele, rolurile 'si instan'tele ontologiei utilizatorul nu trebuie s'a introduc'a inputuri. Astfel, nu exist'a cazuri 'in care acestea pot func'tiona gre'sit.
+
+Solicitarea claselor ontologiei prina c'tionarea butonului specific va returna o list'a complet'a cu conceptele acesteia.
+
+Cererea rolurilor din ontologie va returna o list'a cu aceste roluri, incluz\ia nd $bottom$ $ObjectProperty$ 'si $topObjectProperty$.
+
+La solicitarea tuturor instan'telor din ontologie se returneaz'a o list'a care le con'tine, f'ar'a alte ad'augiri.
+
+%%%%%%%%%%%%===========================
+\section{Performan't'a}
 
 Am evaluat aplica'tia utiliz\ia nd un set de 10 'intreb'ari pe care le-am rulat de 100 de ori. Am calculat media ob'tinerii unei interog'ari SPARQL 'si um'arul de constr'angeri pe care 'il are aceasta, num'arul de indivizi din r'aspunsul dat de Pellet 'si timpul afl'arii acestui r'aspuns, num'arul de instan'te con'tinute de r'aspunsul dat de RDFLib 'si timpul 'in care acesta a fost ob'tinut. 
 
@@ -1515,11 +1818,11 @@ $TQ_10$ & 6 & 2057 & 4 & 8 & 0 & 2083 \\[1ex]
 \caption{Performan'ta modulului $Translator$}
 \centering                          % tabel centrat 
 \begin{tabular}{|c|c|c|c|c|c|c|}          % 4 coloane centrate 
-\hline\hline                        % linie orizontala dubla
+\hline                    % linie orizontala dubla
 TQ &  Constr\ia ngeri  & Quepy  & Nr. de rezultate  & RDFLib \\ [0.5ex]   % inserare tabel
 & SPARQL & time(ms)  & RDFLib & time(ms)\\ [0.5ex]
 %heading
-\hline                              % linie orizontal simpla
+\hline  \hline                            % linie orizontal simpla
 $TQ_1$ & 1 & 23  & 0 & 23 \\[1ex]
 $TQ_2$ & 1 & 3 & 6 & 8 \\[1ex]
 $TQ_3$ & 3 & 2 & 0 & 19 \\[1ex]
@@ -1542,47 +1845,9 @@ Acestea de confirm'a faptul c'a transmisia datelor dintre $Translator$ 'si $Reas
 
 
 
-\section{Validare}
-
-Sec'tiunea de validare cuprinde o descriere a felului 'in care au fost 'indeplinte cerin'tele stabilite ale aplica'tiei. 'In sistem se realizeaz'a cu succes utilizarea limbajului natural pentru a exprima o cerin't'a. Prin intermediul unui limbaj de interogare se va interoga ontologia pentru a ob'tine r'aspunsul aferent. Sistemul implementeaz'a dou'a metode de interogare prin care utilizatorul poate s'a solicite r'aspunsul. Aplica'tia construit'a ofer'a posibilitatea de a vizualiza toate elementele ontologiei, prin intermediul unei ferestre speciale. 'In Anexa B este prezentat 'intregul set de 'intreb'ari pe care utilizatorul le poate adresa sistemului. 'In cadrul dezvolt'arii acestei aplica'tii, accentul a fost pus pe func'tionalitate, 'si mai pu'tin pe dezvoltarea unui set de 'intreb'ari extrem de cuprinz'ator. Chiar 'si 'in aceste cazuri, 'intreb'arile acoper'a cea mai mare parte a informa'tiilor ontologiei.
-
-Prin devoltarea acestui sistem, cerin'ta nonfunc'tional'a de a avea un agent $explicativ$ este satisf'acut'a prin modul de realizat'a prin func'tionalit'a'tile alese. $Securitatea$', {\it toleran'ta\ la\ e'sec} 'si {\it utilizabilitatea} sunt cuprinse de procesul de dezvoltare.
-
-
-{\bf Utilizabilitate}
-
-Aceast'a cerin'ta este satisf'acut'a printr-o interfa'ta simpl'a, prezentat'a 'in ~\ref{fig:ui1}, ce poate fi accesat'a 'in mediul online. Datorit'a formul'arii cerin'tei 'in limbaj natural, utilizatorul nu are nevoie de training pentru utilizarea sistemului. Editarea interog'arii permite flexibilitate 'in utilizabilitate, astfel clientii mai avansa'tii pot interoga ontologia utiliz\ia nd interog'ari SPARQL. Pentru a avea o vedere de ansamblu asupra con'tinutului ontologiei, utilizatorii pot vizualiza elementele acesteia prin intermediul unei pagini prezentat'a in figura ~\ref{fig:ui2}.
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.65 \linewidth]{img/pg1_cut.png}
-        \caption{Pagina pentru adresarea 'intreb'arilor}
-    \label{fig:ui1}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.65 \linewidth]{img/ui2.png}
-        \caption{Pagina pentru explorarea ontologiei}
-    \label{fig:ui2}
-\end{figure}
-
-
-{\bf Toleran'ta la e'sec}
-
-Pentru a permite o experien't'a c\ia t mai bun'a 'in interac'tiunea cu agentul explicativ, sistemul este implementat astfel 'inc\ia t s'a aten'tioneze utilizatorul 'in cazurile 'in care realizeaz'a opera'tii care con'tin date defectuoase. Pentru cazurile 'in care field-ul pentru 'intrebare sau field-ul pentru interogare sunt goale, butoanele sunt dezactivate 'si utilizatorul nu poate face nicio ac'tiune. Se trateaz'a 'si cazurile 'in care 'intrebarea nu este formulat'a corect sau interogarea SPARQL nu este valid'a, pentru aceste situa'tii sistemul return'and aten'tion'ari pentru a semnala provenien'ta e'secului.
-
-{\bf Securitate}
-
-Pentru 'indeplinirea obiectivului de securitate am considerat restric'tionarea interog'arilor SPARQL la opera'tii de vizualizare. A'sadar, utilizatorul nu poate s'a realizeze opera'tii de inserare, 'stergere sau alte modific'ari asupra datelor. De asemenea, accesul la ontologie este restric'tionat, caz 'in care clientul poate numai s'a vizualizeze numai clasele, indivizii 'si rolurile con'tinute de ontologie.  
-
-{\bf Explicativ}
-
-Cerin'ta ca sistemul s'a fie explicativ este 'indeplinit'a prin introducerea pasului suplimentar 'in care utilizatorul poate s'a vizualizeze 'si s'a editeze interogarea SPARQL, astfel 'in'teleg\ia nd modul de extragere al r'aspunsului. Prin acest fapt, sistemul nu este considerat o cutie neagr'a 'in care intrarea este o 'intrebare, iar ie'sirea este un r'aspuns. Utilizatorul poate s'a foloseasc'a 'si pagina pentru solicitarea detaliilor ontologiei pentru a 'intelege provenien'ta r'aspunsului.
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Manual de Instalare 'si Utilizare}
+\label{sec:instalare}
 
 Capitolul de fa't'a cuprinde 'in prima parte instruc'tiuni pentru instalarea sistemului 'si aducerea 'in starea de rulare. A doua parte con'tine un manual de utilizare destinat utilizatorilor, pentru a cunoa'ste modalitatea de folosire a sistemului
 
@@ -1614,6 +1879,8 @@ Sistemul pune la dispozi'tie 'si o pagin'a 'in care utilizatorul poate vedea ce 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Concluzii}
+\label{sec:concluzii}
+
 'In prima parte a acestui capitol se prezint'a o retrospectiv'a asupra sistemului, pun'and 'in valoare modul de r'aspuns la 'intreb'arile adresate 'in limbaj natural. O analiz'a a dezvolt'arilor ulterioare ce pot 'imbun'at'a'ti sistemul de r'aspuns vor fi prezentate 'in partea a doua a acestui capitol.
 
 \section{Contribu'tii 'si realiz'ari}
