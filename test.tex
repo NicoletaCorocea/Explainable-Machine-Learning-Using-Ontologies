@@ -58,19 +58,22 @@ DEPARTAMENTUL CALCULATOARE}
 \begin{document}
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.9 \linewidth]{img/properties_subcls_2.png}
-        \caption{Prima parte a subconceptelor clasei $Parameter$}
-    \label{fig:subc_1}
-\end{figure}
+\section{Cerin'tele sistemului}
 
-\begin{figure}
-    \centering
-    \includegraphics[width = 0.9 \linewidth]{img/properties_subcls_1.png}
-        \caption{A doua parte a subconceptelor clasei $Parameter$}
-    \label{fig:subc_2}
-\end{figure}
+\subsection{Cerin'te func'tionale}
+
+\begin{itemize}
+    \item {\it Translatarea limbajului natural 'in SPARQL} - Sistemul trebuie s'a pun'a la dispozi'tie un mecanism de translatare a 'intreb'arilor din limbaj natural 'in limbaj de interogare SPARQL, precum 'si o modalitate de editare ulterioar'a a interog'arilor.
+    \item {\it Interogarea\ ontologiei} -  Sistemul trebuie s'a permit'a interogarea ontologiei utiliz\ia nd limbajul de interogare SPARQL destinat ontologiilor 'si s'a ofere r'aspunsuri pe baza resurselor conceptualizate 'in baza de cuno'stin'te, utiliz\ia nd libr'aria Pellet 'si libr'aria RDFLib.
+    \item {\it Permite\ vizualizarea\ elementelor\ ontologiei} - Sistemul trebuie s'a ofere capabilitatea de a expune, prin intermediul interfe'tei utilizator, a tuturor elementelor din care este constituit'a ontologia.
+\end{itemize}
+\subsection{Cerin'te nonfunc'tionale}
+\begin{itemize}
+    \item {\it Utilizabilitate} - Proiectarea sistemului 'si a interfe'tei utilizator se va face urm'arind simplitatea de utilizare. Clien'tii novici pot 'incepe utilizarea cu pu'tin instructaj asupra utiliz'arii aplica'tiei.
+    \item {\it Toleran'ta\ la\ e'sec} - Sistemul este construit 'in a'sa fel 'inc\ia t, 'in cazul in care acesta e'sueaz'a 'in interpretarea intreb'arii sau pentru g'asirea unui r'aspuns, utilizatorul va fi rugat s'a repete 'intrebarea sub o alta forma sau s'a verifice interogarea.
+    \item {\it Securitate} - Datele ontologiei pot fi vizualizate, fiind publice utilizatorilor, dar nu se va permite realizarea interog'arilor care pot modifica  sau altera starea acestora.
+    \item {\it Explicativ} - Realizarea sistemului va 'tine cont de transparen'ta de realizare a opera'tiilor, c'at si de dreptul utilizatorului de a fi implicat 'in procesul de decizie.
+\end{itemize}
 
 
 \end{document}

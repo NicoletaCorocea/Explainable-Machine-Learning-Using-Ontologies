@@ -46,7 +46,7 @@
 \renewcommand{\thesisauthor}{Nicoleta COROCEA}    %% Your name.
 \renewcommand{\thesismonth}{Iunie}     %% Your month of graduation.
 \renewcommand{\thesisyear}{2019}      %% Your year of graduation.
-\renewcommand{\thesistitle}{EXPLAINABLE MACHINE LEARNING USING ONTOLOGIES } % Title
+\renewcommand{\thesistitle}{EXPLICAREA 'INV'A'T'ARII AUTOMATE FOLOSIND ONTOLOGII 'SI LIMBAJ NATURAL} % Title
 \renewcommand{\thesissupervisor}{Assoc.Prof.Dr.Eng. Adrian GROZA}
 \newcommand{\department}{FACULTATEA DE AUTOMATIC'A 'SI CALCULATOARE\\
 DEPARTAMENTUL CALCULATOARE}
@@ -212,8 +212,30 @@ Data \hspace{8cm} Nume, Prenume
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introducere - Contextul proiectului}
+
 \pagestyle{headings}
+
+ Interac'tiunile cu agen'tii inteligen'ti sunt privite cu ne'incredere datorit'a structurii de cutie neagr'a. Nevoia de a crea sisteme explicabile pentru a diminua scepticismul are 'si influen'te legale. 'In acest sens, Uniunea European'a sus'tine dreptul de a nu fi supus exclusiv unei decizii luate 'in totalitate de un algoritm. 'In capitolul curent se va descrie 'in prima parte cererea pentru explicabilitate pentru algoritmii de 'inv'a'tare. A doua parte abordeaz'a o conturare a solu'tiei problemei, c'at 'si impactul pe care 'il are asupra acesteia.
+ 
 \section{Descrierea problemei}
+
+C'autarea cuvintelor cheie $"machine\ learning"$ 'in cadrul motorului de c'autare Google a crescut de patru ori 'in utimii 5 ani, ajun\ia nd la noi valori maxime 'in anul 2019, potrivit statisticilor\footnote{https://trends.google.com/trends/}. Amplificarea interesului pentru aria 'inv'a't'arii automate 'si dezvoltarea acestui domeniu este 'incurajat'a de cre'sterea num'arului de date disponibile folosite pentru antrenarea algoritmilor, aproxim\ia ndu-se c'a p\ia n'a 'in 2020, universul digital va atinge 44 de zettabytes. Mai mult de at\ia t, oamenii sunt interesa'ti, dar 'si sceptici cu privire la rezultatele pe care le poate da un algoritm. Acest fapt a condus la $Explainable AI$ (XAI), pentru explicarea procesului prin care un algoritm de 'inv'a'tare automat'a sau orice sistem inteligent ob'tine r'aspunsul.
+
+Scopul XAI este de a oferi r'aspuns utilizatorului la 'intreb'arile care apar pentru sistemele de tipul cutie neagr'a, cum ar fi 'inv'a'tarea automat'a: "De ce ai f'acut asta? De ce nu ai f'acut altceva? C\ia nd reu'se'sti? C\ia nd e'suezi? C\ia nd e'suezi? C\ia nd pot avea 'incredere 'in tine? Cum corectez o eroare?". Aceste 'intreb'ari se afl'a 'in concordant'a cu urm'atorul citat ~\cite{monroe2018ai} din CACM (tradus): {\it "Este timpul ca inteligen'ta artificial'a s'a dep'a'seasc'a perioada de adolescen't'a, de joc, 'si s'a ia 'in serios no'tiunile de calitate 'si fiabilitate."}.
+
+'In acela'si sens, politica Uniunii Europene 'in ceea ce prive'ste prodec'tia datelor pledeaz'a pentru dreptul la explica'tie. Prin urmare, nu este surprinz'ator faptul c'a articolul 22 din GDPR include "Dreptul de a nu fi supus unei decizii bazate exclusiv pe prelucrarea automat'a". Tot pe acest plan, inclusiv Facebook explic'a utilizatorilor de ce fac parte din grupul 'tint'a al reclamelor pe care le v'ad. 
+
+Domeniul 'stiin'tei datelor responsive~\cite{van2017responsible} este un prim exemplu de aria ce poate beneficia pe urm XAI. Opinia noastr'a este ca numai 'inv'at'area automat'a 'in sine nu este suficient'a pentru a lua o decizie. Chiar 'si cu clasificare foarte exact'a, este nevoie de un fel de garan'tie sau ra'tionament penntrua lua decizii.
+
+Multe abord'ari ale explicabilit'a'tii sunt disponibile din ultimii ani, cum ar fi cercetarea lui Toni et al. pentru argumentare 'si explicare~\cite{ANNWithXAI}. 'In mod similar, Gilpin et al.~\cite{Gilpin2019ExplainingLearning} se concentreaz'a asupra metodelor explicabile 'in arhitecturile neurale ad\ia nci, oferind o imagine de anslamblu a interpretabilit'a'tii 'inv'a't'arii automate. Aceste realiz'ari nu se opresc la explicarea 'inv'a't'arii automate, ci se extind 'si spre alte domenii, cum ar fi medicina, biologia 'si limbajul natural. 
+'In domeniul biomedical, Holzinger et al. \cite{Holzinger2018FromAI} sus'tin implementarea 'inv'a't'ari automate interactive, {\it iML}. Aceast'a abordare pune omul 'in bucla algoritmului, combin\ia nd cuno'stin'tele umane cu seturi de date biomedicale incomplete, pentru a ob'tine ceea ce nici un om, nici un computer nu ar putea sa fac'a singur. 'In acest sens, este de 'in'teles necesitatea pentru XAI, explicarea deciziilor sistemelor inteligente. 
+
+'In paralel cu aceste aspecte, odat'a cu tehnologia evolueaz'a 'intreaga popula'tie. Oamenii au devenit din ce 'in ce mai atra'si de tehnologie, iar internetul le of
+In addition to these facts, people have become more and more caught up with technology, and the Internet provides them with a wealth of information sources such as search engines, forums, and online learning platforms. 
+Platforms such as Coursera\footnote{https://www.coursera.org/} or Udemy\footnote{https://www.udemy.com/} provide information that can be accessed at any time, being presented in a pleasant way and encouraging users to improve. The objective of our application is not to make a new e-learning platform, nor to replace it, but to provide a complementary solution. Our application provides support for the exploration of structured information, being a good start for those who want to explore.
+
+\textcolor{green}{xai o realitate in viitorul urmatorilor 5 ani}
+
 \section{Conturarea solu'tiei}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,9 +244,90 @@ Data \hspace{8cm} Nume, Prenume
 'In acest capitol se vor descrie obiectivele sistemului dezvoltat, c\ia t 'si pozi'tionarea solu'tiei alese. De asemenea, sunt prezentate 'si descrise pe scurt 'si cerin'tele sistemului.
 
 \section{Pozi'tionarea sistemului}
+
+Num'arul de informa'tii din cadrul internetului a crescut, acestea fiind nestructurate 'si contradictorii 'in multe cazuri. Acest fenomen este 'int\ia lnit 'si 'intr-un domeniu restr\ia ns ca {\it 'inv\ia 'tarea automat'a}. Mai mult de at\ia t, interac'tiunile cu un agen'tii inteligen'ti sunt privite cu scepticism 'si ne'incredere datorit'a r'aspunsurilor provenite dintr-o logic'a 'incapsulat'a 'intr-o cutie neagr'a. Ne'increderea 'in inteligen'ta artificial'a 'si necunoa'sterea principiilor de baz'a ale 'inv'at'arii automate determin'a oamenii s'a utilizeze sistemele 'invechite 'in detrimentul solu'tiilor noi, inteligente. Ace'stia continu'a s'a 'indeplineasc'a sarcini repetitive care ar putea fi u'surate utiliz'and 'inv'a'tarea automat'a. Tototdat'a, lipsa explica'tiilor poate avea un impact asupra legalit'a'tii deciziilor luate. Lipsa explica'tiilor 'si lipsa implic'arii utilizatorului 'in procesul de luare a deciziilor care 'il privesc 'indeaproape este un drept 'inc'alcat. Datorit'a acestor fapte, progresul sistemelor inteligente este 'incetinit. 
+'In tabelul ~\ref{tab:pb_table} se prezint'a o descriere a problemei, al'aturi de solu'tii posibile ale acesteia.
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{l|l}
+Problema &  Ne'increderea 'si scepticismul cu privire la solu'tiile inteligente datorate \\
+& necunoa'sterii domeniului 'si al func'tion'arii 'inv'a't'arii automate. \\
+    \hline
+afecteaz'a & Utilizatorii, dezvoltatorii de aplica'tii 'in domeniul 'inv'a't'arii automate.\\
+    \hline
+efectele sunt & Supunerea la decizii luate 'in totalitate de un agent inteligent, c\ia t \\
+    & 'si sc'aderea utiliz'arii 'si dezvolt'arii solu'tiilor bazate pe inteligen'ta\\
+    &  artificial'a.\\
+    \hline
+o solu'tie de succes & Capabil'a s'a r'aspund'a 'intreb'arilor 'in limbaj natural 'si s'a ofere.\\
+ ar trebui s'a fie &  transparen't'a 'in modul de ob'tinere a r'aspunsului.\\
+    \end{tabular}
+     \caption{Declara'tia problemei}
+    \label{tab:pb_table}
+\end{table}
+
+Politica Uniunii Europene privind protec'tia datelor oblig'a la acordarea explica'tiilor 'in cazul r'aspunsurilor date de agen'tii inteligen'ti. 'In articolul 22 din GDPR se sus'tine "Dreptul de a nu fi supus unei decizii bazate exclusiv pe prelucrarea automat'a". Astfel Uniunea European'a identific'a o surs'a a ne'increderii ca fiind lipsa explica'tiilor in contextul deciziilor bazate pe 'inv'a'tare automat'a, c\ia t 'si problema supunerii la deciziile luate de un agent inteligent. Sistemul dezvoltat dore'ste s'a rezolve problema ne'increderii 'si sa reduc'a scepticismul 'in utilizarea solu'tiilor inteligente existente. Acesta este bazat pe un agent explicativ al 'inv'a't'arii automate, care este disponibil prin intermediul unei interfe'te. Proiectul creat pune la dispozi'tie comunit'a'tii dezvoltatorilor de sisteme inteligente o solu'tie prin care pot s'a 'imp'art'a'seasc'a func'tionarea sistemelor automate, separat de mediul influen'tabil al diverselor pagini web. Sistemul explicativ va fi disponibil online 'si to'ti utilizatorii vor putea avea acces. 'In tabelul ~\ref{tab:solution_table} este prezentat'a o descriere a solu'tiei.
+
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{l|l}
+Pentru &  Persoanele care doresc s'a 'inteleag'a domeniul 'inv'a't'arii automate. \\
+    \hline
+Care & Doresc s'a acceseze informa'tii structurate 'si clare ale domeniului. \\
+    \hline
+Sistemul & Explainable ML\\
+    \hline
+Ofer'a & R'aspunsuri la 'intreb'ari 'in limbaj natural despre 'inv'a'tarea automat'a \\
+\hline
+Spre deosebire de & Informa'tiile disponibile pe internet care nu sunt structurate,\\
+&  pot fi contradictorii 'si provin din surse nesigure.\\
+\hline
+Sistemul dezvoltat & Ofer'a un mediu de documentare 'si 'inv'a'tare supravegheat, 'in care \\
+&  datele introduse sunt cele corecte 'si nu sunt contradictorii. \\
+    \end{tabular}
+     \caption{Solu'tia propus'a}
+    \label{tab:solution_table}
+\end{table}
+
+Aplica'tia va fi implementat'a utiliz\ia nd solu'tii de dezvoltare a sistemelor de tipul 'intrebare-r'aspuns. Pentru procesarea limbajului natural se vor utiliza Quepy sau AutoSPARQL, iar pentru dezvoltarea ontologiei 'si pentru reasoning se vor folosi Protege sau Racer, respectiv Pellet sau HermiT. Acest sistem va fi pus la dispozi'tie printr-o interfa't'a care va fi accesibil'a pe internet. 'In tabelul ~\ref{tab:stakeholders} sunt prezentate persoanele care interac'tioneaz'a cu sistemul. Utilizatorii reprezint'a persoanele care doresc s'a pun'a 'intreb'ari, iar administratorul reprezint'a persoana care va 'intre'tine sistemul.
+
+\begin{table}
+    \centering
+    \begin{tabular}{l|l|l}
+    Nume & Descriere & Responsabilitate \\
+    \hline
+Administrator & Persoan'a calificat'a s'a 'intre'tin'a & Actualizeaz'a ontologia cu date noi 'si \\
+ &  ontologia sistemului 'si sistemul & adaug'a eventuale 'intreb'ari noi \\
+ & de identificare a 'intreb'arilor. & permise. \\
+    \hline
+Utilizator & Persoan'a care dore'ste s'a & S'a acceseze sistemul 'si s'a adreseze \\
+& in'teleag'a modul de func'tionare & 'intreb'ari.\\
+&  al 'inv'a'tarii automate & \\
+    \end{tabular}
+     \caption{Utilizatorii aplica'tiei}
+    \label{tab:stakeholders}
+\end{table}
+
+Domeniul aplica'tiei cuprinde o multitudine de sisteme pentru r'aspunderea la 'intreb'ari. Acestea acoper'a diverse domenii de aplicabilitate, de la medicin'a p'ana la economie. Sistemele care ofer'a r'aspuns la 'intreb'arile adresate 'in limbaj natural nu sunt la fel de populare ca agen'ti conversa'tionali, dar sunt utilizate 'in arii extinse. Pe pia'ta agen'tilor conversa'tionali, cei mai populari sunt Siri, oferit de Apple, Cortana, oferit de Microsoft, Google Assistant 'si IBV Watson. Un sistem sub forma de agent conversa'tional asem'an'ator cu al nostru din punctul de vedere al domeniului este cel construit de Goel \cite{WatsonAEducation} pentru propriul curs de inteligen'ta artificial'a. Gilpin \cite{Gilpin2019ExplainingLearning} propune metode de explicare ale arhitecturilor re'telelor neurale, d\ia nd o vedere de ansamblu asupra 'inv'a't'arii automate.
+
 \section{Descrierea obiectivelor}
+
+Obiectivul principal al sistemului este diminuarea ne'increderii 'si al scepticismului pentru folosirea sistemelor inteligente. Acest lucru se va ob'tine prin indepmnarea utilizatorilor spre 'in'telegerea domeniului 'inv'at'arii automate cu ajutorul unui mediu prietenos 'si 'tin\ia nd cont de standardele pentru explicarea ob'tinerii r'aspunsului. Sistemul pune la dispozi'tie un mecanism pentru ob'tinerea r'aspunsurilor la 'intrebari 'in limbaj natural din domeniul 'inv'a't'arii automate, implic'and 'si utilizatorul 'in acest proces. Un avantaj al acestei aplica'tii este experien'ta oferit'a utilizatorului, asem'an'atoare cu a unui motor de c'autare. To'ti utilizatorii sunt familiariza'ti cu formularea cerin'telor 'in limbaj natural, 'si astfel acomodarea cu sistemul pentru detalierea 'inv'a't'arii automate va fi rapid'a. Un alt avantaj const'a 'in interfa'ta prietenoas'a 'si minimalist'a de care utilizatorul va face uz. Datorit'a simplit'a'tii 'si clarit'a'tii fluxului, utilizatorul nu va fi distras. Informa'tiile sunt centralizate 'intr-o ontologie, ceea ce duce la rapiditate 'in extragerea datelor, nefiind necesar'a chestionarea mai multor scheme. Implicarea utilizatorului 'in procesul de ob'tinere a r'aspunsului este un pas c'atre explicarea 'si 'intelegerea sistemului, c\ia t 'si a diminu'arii scepticismului in privin'ta corectitudinii r'aspunsurilor. Datorit'a utiliz'arii intensive a internetului 'si a num'arului de informa'tii 'in cre'stere, aplica'tia se va integra cu u'surin't'a 'in r\ia ndul surselor de documentare, c'at 'si 'in r\ia ndul agen'tilor conversa'tionali. Privind din perspectiv'a tehnic'a, sistemul propune ca utilizatorul s'a exprime 'in limbaj natural cerin'tele fa't'a de sistem, s'a implementeze doua metode de extragere a r'aspunsurilor 'in care utilizatorul este implicat 'in mod direct, c\ia t 'si s'a ofere transparen't'a in privin'ta elementelor ontologiei .
+
+Tratarea limbajului natural 'in aplica'tiile care implic'a formularea de cereri c'atre un sistem nu este o noutate 'in cele mai multe aplica'tii ale zilelor noastre. O bar'a de c'autare implic'a at'at identificarea cuvintelor importante, c'at 'si pozi'tionarea lor pentru a r'am\ia ne relevante. Utilizarea limbajului natural 'in formularea cererilor spore'ste confortul utilizatorului, care nu trebuie s'a fie nevoit s'a recurg'a la interog'ari complexe. Astfel, atunci c\ia nd sistemul 'intelege limbajul natural, va comunica cu clientul 'in acest limbaj. Cu toate acestea, mecanismul care duce la 'intelegerea cererii nu este deloc at\ia t de simplu. Acest proces implic'a identificarea p'ar'tilor vorbirii, a structurii 'si, de cele mai multe ori, identificarea unui context 'in care se situeaz'a 'intrebarea sau translatarea cerin'tei 'intr-o form'a mai u'sor de 'inteles de c'atre calculator.
+Sistemul propune ca utilizatorul s'a introduc'a cererea pentru r'aspuns 'in limbaj natural. Acest fapt implic'a 'si folosirea variantelor multiple ale unei singure 'intreb'ari, c'at 'si varia'tii ale cuvintelor. Un avantaj major al utiliz'arii limbajului natural ca punct de plecare 'in interogarea ontologiei const'a 'in introducerea unui nivel suplimentar, cu care utilizatorul este acomodat deja. Interogarea ontologiei nu mai implic'a astfel cunoa'sterea mandatorie a unui limbaj de interogare specific 'si aplica'tia poate fi utilizat'a cu ceea ce utilizatorul cunoa'ste deja. Acest fapt ajut'a utiliatorii noi s'a foloseasc'a sistemul 'si, asigur\ia nd func'tionalitatea de baz'a.
+
+Explicarea ac'tiunilor agen'tilor inteligen'ti este o problem'a at\ia t de natur'a legal'a, c'at 'si de natur'a tehnic'a. Legisla'tia prevede ca Facebook s'a explice de ce apar unele reclame pentru care am fost targeta'ti, pun'and la dispozi'tie o func'tionalitate din interfa'ta pentru a fi accesat'a de utilizator. 'In acela'si timp, legisla'tia GDPR sus'tine ca a nu fi supus unei decizii luate exclusiv de un sistem inteligent este un drept ce trebuie respectat. Astfel, explicarea procesului de ob'tinere a unui r'aspuns, c\ia t 'si explicarea unui domeniu ce este considerat ambiguu 'si asem'an'ator unei cutii negre, este o sarcin'a ce trebuie 'indeplinit'a.
+Implicarea utilizatorului 'in ciclul de execu'tie al unui algoritm nu este un lucru nou 'in domeniul inteligen'tei artificiale. Sisteme asem'an'atoare au fost dezvoltate pentru a complementa algoritmul de 'inv'at'are 'si a ajuta la luarea unei decizii atunci c'and datele domeniului sunt neclare 'si au lipsuri. Sistemul 'isi propune implementarea a dou'a metode prin care r'aspunsul s'a fie extras din ontologie. Aceste metode ofer'a flexibilitate ontologiei, put\ia nd fi implementat'a 'in formate diferite ce sunt compatibile cu aceste solu'tii. Cele dou'a solu'tii trebuie s'a fie cel pu'tin par'tial complementare astfel 'inc\ia t dac'a una e'sueaz'a, cealalt'a s'a poat'a oferi un r'aspuns. Pentru ob'tinerea r'aspunsului, utilizatorul este 'incurajat s'a editeze interogarea 'in cazul 'in care nu este mul'tumit de cea afi'sat'a de sistem sau rezultatele ob'tinute nu sunt cele a'steptate. Aceast'a facilitate 'incurajeaz'a utilizatorii s'a exploreze 'in continuare, f'ara a fi limita'ti de setul de 'intreb'ari disponibile pentru clien'tii novici. Beneficiul principal al edit'arii interog'arii este acela c'a utilizatorul este implicat 'in proces 'si poate decide singur, 'in cunostiin't'a de cauz'a, dac'a dore'ste o alt'a form'a a interog'arii pentru a ob'tine un r'aspuns mai specific. 
+
+Oferirea transparen'tei 'in aplica'tii este o problem'a des 'int\ia lnit'a, mai ales 'in contextul explic'arii deciziilor sistemelor inteligente. Av\ia nd la vedere ceea ce 'si sistemul cunoa'ste, utilizatorul va avea mai mult'a 'incredere 'in r'aspunsurile date de acesta. Sporirea 'increderii este unul din obiectivele principale ale acestui sitem. Problema scepticispumului 'si a ne'increderii 'in ceea ce prive'ste sistemele inteligente este str\ia ns legat'a de lipsa transparen'tei, a afis'are cu claritate a procesului prin care sunt ob'tinute rezultatele sau schema de provenien't'a a acestora. Transparen'ta aduce cu sine numeroase avantaje. Un avantaj major este acela c'a utilizatorul va cunoa'ste sistemul 'si va 'intelege cum s'a 'il utilizeze mult mai rapid ca 'in alte cazuri. Pentru 'indeplinirea obiectivului principal al acestui proiect, este necesar'a respectarea transparen'tei ontologiei. Prin aceasta se 'intelege expunerea pentru vizualizare a tuturor elementelor din care ontologia este constituit'a, facilitate implementat'a prin intermediul interfe'tei utilizator. Aceast'a detaliere suplimentar'a va 'incuraja utilizatorul s'a descopere noi leg'aturi 'intre date 'si noi mecanisme de exploatare a aplica'tiei. A'sadar, transparen'ta nu aduce neajunsuri sistemului, ci 'indeamn'a utilizatorii spre explorare 'si descoperire.
+
+
 \section{Cerin'tele sistemului}
-\subsection{Cerin'te fun'tionale}
+
+\subsection{Cerin'te func'tionale}
 
 \begin{itemize}
     \item {\it Translatarea limbajului natural 'in SPARQL} - Sistemul trebuie s'a pun'a la dispozi'tie un mecanism de translatare a 'intreb'arilor din limbaj natural 'in limbaj de interogare SPARQL, precum 'si o modalitate de editare ulterioar'a a interog'arilor.
@@ -236,16 +339,149 @@ Data \hspace{8cm} Nume, Prenume
     \item {\it Utilizabilitate} - Proiectarea sistemului 'si a interfe'tei utilizator se va face urm'arind simplitatea de utilizare. Clien'tii novici pot 'incepe utilizarea cu pu'tin instructaj asupra utiliz'arii aplica'tiei.
     \item {\it Toleran'ta\ la\ e'sec} - Sistemul este construit 'in a'sa fel 'inc\ia t, 'in cazul in care acesta e'sueaz'a 'in interpretarea intreb'arii sau pentru g'asirea unui r'aspuns, utilizatorul va fi rugat s'a repete 'intrebarea sub o alta forma sau s'a verifice interogarea.
     \item {\it Securitate} - Datele ontologiei pot fi vizualizate, fiind publice utilizatorilor, dar nu se va permite realizarea interog'arilor care pot modifica  sau altera starea acestora.
-    \item Explicativ
+    \item {\it Explicativ} - Realizarea sistemului va 'tine cont de transparen'ta de realizare a opera'tiilor, c'at si de dreptul utilizatorului de a fi implicat 'in procesul de decizie.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Studiu Bibliografic}
 
-\section{XAI}
-\section{Sisteme 'intrebare - r'aspuns}
+\section{Explicarea deciziilor sistemelor inteligente}
+'In ultima decad'a, mai ales 'incep\ia nd cu anul 2012, sistemele bazate pe inteligen't'a artificial'a 'si 'inv'a'tare automat'a au evoluat 'si au atins performan'te care oamenii ar fi crezut c'a sunt de neatins. Cre'sterea cantit'a'tii de informa'tii disponibile pentru a antrena algoritmi, c\ia t 'si cre'sterea puterii computa'tionale a calculatoarelor 'si optimiz'ari noi aduse algoritmilor au condus la avansarea domeniului.
+
+$Explainable\ AI$, prescurtat $XAI$, este o tehnic'a din ce 'in ce mai 'int\ia lnit'a 'in domenul inteligen'te artificiale. Propune ca procesele sistemelor inteligente s'a fie expuse pentru a fi 'in'telese de oamenii care le folosesc. Deschide cutia neagr'a a 'inv'a't'arii automate pentru a c'a'stiga 'increderea utilizatorilor 'si a putea face modele mai evoluate prin integrarea omului 'in procesul de luare a deciziilor. 
+
+Problema explic'arii deciziilor luate de sistemele inteligente a devenit o problema de legisla'tie, 'intruc\ia t autorit'a'tile de reglementare 'si utilizatorii depind de agen'tii inteligen'ti. 'In acest sens, trebuie privit'a cu aten'tia problema lu'arii deciziilor 'in exclusivitate de un agent. Atunci c\^and un sistem inteligent 'i'ti propune o list'a de filme de vizionat pe baza celor v'azute anterior, este un lucru minunat ce nu necesit'a supraveghere. Datorit'a extinderii aplicabilit'a'tii inteligen'tei artificiale 'in domenii diverse 'si sarcinile 'indeplinite de aceasta au devenit din ce 'in ce mai importante. 'In momentul 'in care un agent inteligent propune un tratament invaziv pe baza simptomelor acuzate, decizia luat'a trebuie pus'a sub semnul 'intreb'arii 'si explicat'a. 'In acest context, a ap'arut nevoia de a explica de ce se ob'tin anumite r'aspunsuri, c'and se poate avea 'incredere 'intr-un agent, c'and acesta gre'se'ste 'si cum pot fi prevenite sau corectate erorile. Explicarea deciziilor este o necesitate pentru a asigura 'increderea 'si transparen'ta.
+
+Filip Karlo \cite{Dosilovic2018ExplainableSurvey} indetific'a diferen'ta 'intre $interpretabil$ 'si $explicabil$, cele dou'a concepte fiind asem'an'atoare 'si uneori folosite interschimbabil. Prin $interpretabil$ se 'in'telege asocierea unui concept abstract cu un model din care oamenii pot 'in'telege procesul. A fi $explicabil$ 'inseamn'a a asigura o colec'tie de caracteristici a domeniilor interpretabile care au contribuit 'in luarea unei decizii. {\it Transparen'ta
+} este un alt termen des utilizat 'in leg'atur'a cu XAI 'si rela'tionat cu interpretabilitatea, 'insemn\ia nd c'a exista un sens 'in care se poate 'in'telege felul de ac'tionare a unui model. Tot aici sunt identificate tehnicile de punere 'in practic'a a 'interpretabilit'a'tii 'si explicabilit'a'tii: $intergrat$ (bazat pe tansparen't'a) 'si $post-hoc$.
+\begin{itemize}
+
+
+    \item {\it Interpretabilitatea\ integrat'a} este cel mai bine pus'a 'in eviden't'a de transparen't'a. Cea mai bun'a metod'a de explicare a unui model simplu este modelul 'in sine. Pentru modelele complexe cum ar fi re'telele neurale sau SVM, se 'incearca aplicarea unei transparen'te par'tiale, pentru a p'astra un echilibru 'intre interpretabilitate 'si performan't'a. 'In aceast'a direc'tie, Tony Van Gestel et al. \cite{VanGestel2016LinearMachines} au combinat un model transparent cu un model de tip cutie neagr'a. Ace'stia au folosit drept model transparent regresia logistic'a 'si ca model 'inchis SVM pentru a evalua creditul. 
+
+    \item  Metodele $post-hoc$ sunt aplicabile at\ia t pentru interpretabilitate, c'at 'si pentru explicabilitate. Aceste metode 'incep cu utilizarea unui sistem 'inchis 'si, eventual, datele utilizate pentru antrenare. Din perspectiva interpretabilit'a'tii, metodele post-hoc extrag informa'tii din modelele deja 'inv'a'tate 'si nu depind 'in mod strict de modul de func'tionare al modelului. Din punctul de vedere al explicabilit'a'tii, metoda are ca ies'ire pentru fiecare predic'tie o explica'tie bazat'a pe importan'ta caracteristicilor care au dus la o decizie.
+\end{itemize}
+
+
+DARPA ({\it Defense\ Advanced\ Research\ Project\ Agency} \cite{darpaXAI} este un exemplu de agen'tie ce deruleaz'a un progam p\ia n'a 'in anul 2021 pentru a permite ca sistemele s'a poat'a construi modele explicative pentru a descrie fenomene ce apar'tin lumii reale baz\ia ndu-se pe 'in'telegerea lor asupra contextului 'si a mediului de lucru. Ace'stia 'i'si doresc ca omul s'a fac'a parte din ciclul de execu'tie al algoritmului 'si 'in acela'si timpp s'a p'astreze perfoorman'ta de top a inteligen'tei artificiale. 
+
+Ca aplicabilitate 'in domeniul conducerii autonome, NEXYAD dezvolt'a sistemul SafetyNex \cite{safetyNex} pentru a calcula riscul 'in  timpul condusului 'in timp real. De dou'azeci 'si dou'a de ri pe secund'a, sistemul calculeaz'a riscul. Pentru conduc'atorul auto uman, sistemul emite avertiz'ari c\ia nd este pericol de accident. Pentru un conduc'ator autonom reprezentat de un program, utilizeaz'a riscul ca variabil'a pentru a controla sistestemul. 'In acest fel, sistemul autonom se adapteaz'a la riscul de accident. 'In acest fel, SafetyNex este un XAI.
+
+Cererea pentru XAI a c\ia 'stigat 'si mai mult'a for'ta odat'a cu prima conferin'ta global'a dedicat'a explic'arii deciziilor :$IJCAI:\ Workshop\ on\ Explainable\ Artificial\ Intelligence$\footnote{IJCAI Workshop on XAI http://home.earthlink.net/~dwaha/research/meetings/faim18-xai/}, 'incep\ia nd cu anul 2017. Conferin'ta dore'ste 'incurajarea cercet'arii metodelor pentru implementarea XAI, c\ia t 'si eviden'tierea unor abord'ari interesante 'in domeniu. Se axeaz'a pe explicarea problemelor agen'tilor, motivate de nevoile de a face echip'a 'intre oameni 'si calculatoare. 
+
+'In cadarul acestei conferin'te, Shruti Joshi et al. \cite{BharadhwajExplanationsRecommendations}, a prezentat un sistem de recomandare a filmelor pe baza rating-ului pe care 'il au. Tot rating-ul este folosit pentru a explica rezultatul ob'tinut. O schema explicativ'a pe baza vecinilor a fost construit'a. Modelul lor se bazeaz'a pe re'tele neurale recurente. Explica'tiile au fost inserate cu ajutorul unui graf bipartit ce variaz'a 'in func'tie de timp, din moment ce st'arile utilizaotrului 'si filmului variaz'a 'si acestea 'in timp. Rezultatul ob'tinut de ei este c'a 'in cazul 'in care dou'a filme sunt susceptibile de a fi preferate de un utilizator, va fi recomandat cel ce este mai explicabil.
+
+Lawrence Phillips et. al \cite{PhillipsWorkshopIN-TERPRETABILITY} a dezvoltat m'a'sti explanatorii pentru a explica re'telele neurale. M'a'stile explanatorii indic'a ce date sunt responsabile pentru decizie, care sunt p'ar'tile de input care sunt cele mai importante pentru a genera o predic'tie precis'a. Pentru a crea m'a'stile, a fost utilizat'a o a doua re'tea care creeaz'a explica'tiii c\ia t mai mici posibile pentru a nu afecta acurate'tea predic'tiei. Abilit'a'tile metodei identificate au fost demonstrate pe clasificarea imaginilor folosind re'tele neural convolu'tionale, analiza sentimentelor cu re'tele neurale recurente.
+
+'In aria de lucru a sistemelor inteligente, Uniunea European'a a introdus dreptul la explicare 'in legisla'tia GDPR. Prrin aceasta, UE dore'ste s'a rezolve problemele ce provin din algoritmii care iau decizii. Legisla'tia GDPR cu privire la dreptul la explica'tie acoper'a doar interpretabilitatea. Tot pe acest plan, Statele Unite ale Americii oblig'a prin lege companiile de asigur'ari s'a explice ratele 'si deciziile de acoperire. 'In privin'ta reclamelor ce sunt destinate unui grup 'tint'a de persoane, Facebook pune la dispozi'tie dreptul de explicare. Un utilizator poate cere s'a i se explice de ce vede o reclam'a.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Structurarea 'si interogarea cuno'stin'telor}
+
+
+\subsection{Reprezentarea cuno'stin'telor}
+
+Reprezentarea cuno'stin'telor reprezint'a un subdomeniu la inteligen'tei artificale care se ocup'a cu structurarea informa'tiilor cu scopul de a fi utilizate mai departe de calculatoare pentru a rezolva probleme complexe. Datorit'a structur'arii informa'tiilor algoritmii pot fi mai u'sor implementa'ti 'si men'tinu'ti.
+
+Potrivit \cite{SharmaATechniques},\cite{javap_kr} tehnicile de reprezentare a cuno'stin'telor sunt: 
+
+\begin{itemize}
+    \item {\it Reprezent'arile\ logice} - utilizeaza {\it propositional\ logic} sau {\it predicate\ logic}, fiind implementat'a cu reguli concrete, cu sintaxa precis'a. Aceast'a reprezentare permite inferen'ta logic'a, de'si nu este foarte eficient'a.. 
+    \item {\it Re'telele\ Semantice} - structureaz'a informa'tia  'in forma unor grafuri. Componentele grafului sunt nodurile care reprezint'a obiectele, iar arcele sunt rolurile care leag'a aceste obiecte. Acest gen de reprezentare 'incearc'a s'a modeleze modul de memorare al oamenilor. Principalul mod de ra'tionare este bazat pe mo'stenirea dat'a de rela'tia de apartenen't'a $is-a$.
+    \item {\it Regulile} - constau 'in perechi de tipul condi'tie-ac'tiune. 'In momentul apari'tiei unei situa'tii, regula corespunz'atoare se activeaz'a 'si determin'a ac'tiunea. Un avantaj al acestei reprezen'ari este exprimarea regulilor 'in limbaj natural.
+    \item {\it Cadrele} - sunt structuri asem'an'atoare cu 'inregistr'arile ce constau 'intr-o colec'tie de atribute 'si valori care descriu toate informa'tiile domeniului. Un dezavantaj al acestei reprezent'ari aste acela c'a nu se poate realiza inferen't'a u'sor.
+\end{itemize}
+
+
+
+
+\subsection{Ra'tionamentul pe cuno'stin'te}
+
+Dezvoltarea ra'tionamentului pe cuno'stin'te a ap'arut din nevoia de a deduce c'at mai multe informa'tii din datele existente. Ra'tionamentul automat dispune de dou'a tipuri de mecanisme: mecanisme de inferen't'a 'si demonstratoare de teoreme. 
+
+Mecanismele de inferen'ta sunt sisteme care utilizeaz'a axiome logice asupra unei baze de cuno'stin'te pentru a ob'tine informa'tii noi, pe baza celor existente. Pellet\cite{SirinPellet:Reasoner} este un reasoner semantic, iar acesta, la baz'a, are un mecanism pentru inferen't'a. 'in plus fa't'a de acestea, un reasoner semantic folose'ste mai multe mecanisme 'si, de multe ori, exprim'a regulile de inferen't'a 'in limbajul unei ontologii sau in logic'a descriptiv'a. O alt'a perspectiv'a asupra reasonerelor include reasonerele probabilistice, cum ar fi sistemul non-axiomatic pentru ra'tionament al lui Pey Wang \cite{nonaxiomaticreasoner}. Reasonerul lui Pey Wang r'aspunde 'intreb'arilor pe baza cuno'stin'telor insertate original de c'atre user. Acest sistem, deosebit fa't'a de abord'arile obi'snuite, are abliltatea de a 'inv'a'ta din expereien't'a 'si de a func'tiona cu informa'tii 'si resurse insuficiente.
+
+Demostratoarele de teoreme reprezint'a o metod'a slab'a comparativ cu mecanismele pentru inferen'ta deoarece nu fac uz de cuno'stin'tele din domeniu. Acestea func'tioneaz'a corect atunci c'and datele sunt reprezentate de axiome logice. 'In acest domeniu, Prover9\footnote{Prover9 https://www.cs.unm.edu/~mccune/prover9/manual/2009-11A/} este un demonstrator de teoreme pentru $first\ order\ logic$ 'si $equational\ logic$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Limbajul natural ca interfa't'a pentru interogarea ontologiilor}
+
+Multiple studii arat'a c'a utilizatorii au preferin't'a spre interfe'tele 'in care utilizeaz'a limbajul natural pentru ob'tinerea informa'tiilor, 'in detrimentul altora. De-a lungul timpului au fost implementate multe interfe'te pentru ontologii bazate pe limbaj natural. Cele care sunt u'sor de utilizat, au nevoie de mult'a customizare 'si sunt greu de men'tinut 'in timp. 'In acest context, Danica Damjlanovic a dezvoltat FREyA \cite{DamljanovicNaturalInteraction}, un sistem destinat interog'arii ontologiilor pe baza limbajului natural. Ssitemul prezentat combin'a parsarea sintactic'a cu cuno'stin'tele din ontologii pentru a reduce efortul de adaptare al 'intreb'arilor. Sistemul asigur'a generarea avertismentelor pentru a clarifica motivul de e'sec dac'a acest lucru are loc. Pentru a 'imbun'at'a'ti performant'a 'in timp, sistemul folose'ste ca set de antrenament 'intreb'arile utilizatorului. Aceas'ta abordare poate fi costisitoare pentru 'inceput, dar pe parcursul utiliz'arii sistemul va fi 'imbun'at'a'tit. 
+
+Camille Pradel et al. \cite{PradelNaturalPatterns} sus'tine c'a 'intreb'arile adresate de utilizatorii obi'snui'ti sunt varia'tii ale unor familii de interog'ari. Pornin de la acest fapt, studiaz'a translatarea limbajului natural 'in SPARQL utiliz\ia nd modele de interog'ari care sunt predefinite pentru fiecare familie de 'intreb'ari. Pentru translatare, se utilizeaz'a o interogare-pivot ob'tinut'a 'in urma indetific'arii elementelor principale ale 'intreb'arii. Interogarea pivot este apoi asociat'a unui model de interogare predefinit 'si se ob'tine o list'a de interpret'ari ordonate dup'a relevan't'a. Aceast'a abordare permite dep'a'sirea situa'tiei 'in care utilizatorul pune 'intreb'ari 'in afara domeniului de acoperire al sistemului, iar apoi nu realizeaz'a c'a r'aspunsul nu este cel c'autat. Un avantaj major al acestui sistem este c'a, prin intermediul limbajului pivot utilizat, sistemul poate fi extins pentru a traduce interog'ari din mai multe limbi.
+
+
+
+Linked Data\footnote{http://linkeddata.org/}  reprezint'a o metod'a de a agrega datele structurate 'in triple astfel 'inc\ia t pot fi ra'sp\ia ndite pe mai multe site-uri. Dezvoltarea sistemelor de tip QA pe Linked Data este dificil'a datorit'a duplic'arii datelor 'si fragment'arii 'in num'ar mare de  domenii. 'In aceste condi'tii, construirea unei interog'ari din cuvinte cheie localizate 'in fragmente diferite necesit'a exploatarea at\ia t a leg'aturilor dintre acestea. Dat fiind acest context, Edgard Marx et al. a dezvoltat SINA \cite{sina}, un sistem de interpretare semantic'a a interog'arilor utilizatorilor pentru r'aspunsul la 'intreb'ari pe Linked Data.  SINA r'aspunde 'intreb'arilor prin traducerea cuvintelor cheie oferite de utilizator 'in interog'ari SPARQL conjunctive peste un set de resurse interconectate. Pentru determinarea celei mai potrivite resurse pe baza cuvintelor cheie date de utilizator, SINA folose'ste lan'turi Markov. 
+
+Quepy \cite{quepyCite}, dezvoltat de Machinalis, este un framework care permite transformarea 'intreb'arilor din limbaj natural 'in interog'ari SPARQL sau MQL. Customizarea acestuia se face utiliz\ia nd elemente ale ontologiei 'si reguli de parsare.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Sisteme care r'aspund la 'intreb'ari}
+
+Motoarele de c'autare reprezint'a sursa principal'a de ob'tinere a informa'tiilor. Sistemele care r'apund la 'intreb'ari, numite $Question\ Answering$ sunt puse la dispozi'tie utilizatorilor ca o alternativ'a pentru motoarele de c'autare. Aceste sisteme promit s'a selecteze datele 'si s'a le structureze pentru a 'imbun'at'a'ti experien'ta utilizatorului. Exist'a sisteme dedicate diferitelor domenii. Dac'a 'intreb'arile sunt ni'sate pe un anumit domeniu, cum ar fi $Stack\ Overflow$ pentru a r'aspunde la diferite 'intreb'ari referitoare la programare, atunci sistemul se nume'ste cu $domeniu 'inchis$. Un sistem de tip QA cu domeniu deschis este Quora.
+
+De'si diferi'ti, agen'tii conversa'tionali sunt prin natur'a tot sisteme care r'aspund la 'intreb'ari, iar 'in plus fa't'a de acestea, $chatbotii$ 'intre'tin o conversa'tie c\ia t mai apropiat'a de a fiin'telor umane. Alexa este solu'tia dezvoltat'a de c'atre Amazon pentru a pentru a 'indeplini scopul de asistent virtual. Siri este o alt'a solu'tie de asistent virtual implementat'a de Apple.
+
+'In continuare urmeaz'a a fi prezentate abord'ari interesante pentru agen'ti, categorizate 'in: agen'ti configurabili 'si educa'tionali. 
+
+
+% \subsection{Surse de informa'tie 'si metode de interogare}
+
+% Toniuc identific'a in \cite{toniuc2017climebot} o alt'a abordare 'in structurarea 'si interogarea cuno'stin'telor 'in ceea ce prive'ste platformele de tip Question Answering. Aceste sisteme r'aspund la 'intreb'ari, extr'ag'and informa'tiile prin {\it similaritate\ textual'a} sau {\it Resurse semantice}.
+
+% \subsubsection{Similaritatea textual'a}
+
+% \subsubsection{Resurse semantice}
+
+\subsection{Agen'ti configurabili}
+
+Agen'tii configurabili utilizeaz'a arhitecturi existente pentru a pune la dispozi'tie capabilitatea de a conversa. 
+Diferite programe soft sunt puse la dispozi'tia publicului, gratis sau contra cost, pentru a dezvolta cu u'surin't'a 'si rapid agen'ti conversa'tionali. Aceste platforme permit configurarea agen'tilor inteligen'ti 'in diferite domenii. 'In aceast'a zon'a exist'a trei mari platforme: IBM Watson (dezvoltat de IBM), Api.ai (de'tinut de Google) 'si Wit.ai. 
+
+
+IBM Watson este un sistem destinat s'a r'aspund'a 'intreb'arilor adresate 'in limbaj natural. Este eficient 'in manipularea resurselor de date mari 'si r'aspunde eficient la un set vast de 'intreb'ari. Pentru a atinge adev'arata putere a IBM Watson, Janho Lee et al. \cite{LeeTrainingPairs} au antrenat sistemul cu perechi 'intreb'are-r'aspuns generate automat pentru a cre'ste precizia agentului conversa'tional. Primul pas al realiz'arii lor a constat 'in formarea unui set de 'intreb'ari corespunz'ator, din care au eliminat 'intreb'arile care nu aveau sens. AL doilea pas este reprezentat de antrenarea sistemului IBM Watson. 'In acest pas au verificat fiecare r'aspuns dat de agent 'si au semnalat care este r'aspunsul cel mai bun select\ia ndu-l. Faza a treia const'a 'in testarea sistemului antrenat cu perechi 'intrebare-r'aspuns. 'In urma acesteia, s-a observat c'a IBM Watson este mai precis atunci c'and este antrenat cu 'intreb'ari generate automat, fa't'a de cazul clasic.
+
+
+\subsection{Agen'ti educa'tionali}
+
+
+Cursurile online au devenit din ce 'in ce mai populare odat'a cu extinderea interentului 'si dezvoltarea tehnologiilor. Milioane de utilizatori urm'aresc cursuri la care s-au 'inscriis online. Datorit'a lipsei de interac'tiune fa't'a 'in fa't'a cu profesorii, 'intreb'arile se adreseaz'a tot online, pe forumurile destinate cursurilor. Profesorii se confrunt'a 'in asemenea cazuri cu o multitudine de 'intreb'ari la care trebuie 'sa le r'aspund'a, multe dintre acestea fiind repetitive. 'In acest context, Goel et al. \cite{WatsonAEducation} a dezvoltat o serie de asisten'ti de laborator care au drept scop r'aspunderea la 'intreb'arile des 'int\ia lnite de pe forumul de 'intreb'ari cursului s'au de inteligen't'a artificial'a. 
+Primul asistent de laborator din seria de trei este bazat pe IBM Watson 'si a fost denumit Jill Watson 1 (JW1). Acesta de'tine o memorie de perechi 'intrebare-r'aspuns extrase din datele existente pe forum. Aceste 'intreb'ari sunt 'imp'ar'tite 'in categorii, 'in func'tie de domeniul 'intreb'arii. 'in urma unei evalu'ari, s-a constatat c'a JW1 r'aspundea corect la 'intreb'ari cu mici erori, dar 'r'aspundea la un num'ar foarte mic 'si necesita verificare periodic'a. Reprezentantul celei de-a doua genera'tii, JW2, a fost construit 'in laboratorul lui Goel, utiliz'and libr'arii existente open source. Spre deosebire de JW1, JW2 nu mai folose'ste memorie episodic'a bazat'a pe un set de 'intreb'ari. JW2 utilizeaz'a procesaare semantic'a bazat'a pe reprezent'ari conceptuale. Asociaz'a introducerea 'intreb'arii pe concepte relevante 'si extrage un r'aspuns precompilat.
+
+
+Climebot \cite{toniuc2017climebot} este un agent educa'tional ce are ca scop diminuarea scepticismului 'in ceea ce prive'ste 'inc'alzirea global'a. Agentul este construit pe baza platformei Api.ai, care permite o mare varietate de resurse ce pot fi integrate 'in sistem. Agentul utilizeaz'a dou'a modalit'a'ti pentru extragerea r'aspunsului din baza de cuno'stin'te. Prima modalitate utilizeaz'a resurse structurate din care se extrage informa'tia. Aceasta se traduce apoi 'in forma de limbaj natural pentru a u'sura lizibilitatea. Este implementat'a 'si o alt'a abordare, aceea a extragerii informa'tiilor de pe forumuri. Informa'tiile sunt structurate sub form'a de perechi 'intrebare-r'aspuns, iar 'iin momentul 'in care utilizatorul adreseaz'a o 'intrebare aceasta va fi mapat'a cu una din perechi. Sistemul dezvoltat de Toniuc implementeaz'a un agent conversa'tional menit s'a poarte o conversa'tie cu un utilizator pe tema 'inc'alzirii globale.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Ontologii ale domeniului 'inv'a't'arii automate}
+
+Un domeniu vast ca cel al 'inv'a't'arii automate nu duce lips'a de ontologii structurate pentru a curpinde cuno'stin'tele. 'In majoritatea cazurilor, ontologiile din acest domeniu au fost create pentru a cuprinde experimentele efectuate cu ajutorul algoritmilor de 'inv'a'tare, dar 'si pentru data mining. Problema interpretabilit'a'tii este o problem'a major'a cunoscut'a 'in domeniul 'inv't'arii automate, 'incerc\ia nd s'a fac'a explicit'a semantica diferitelor ac'tiuni. 'In acest sens, pentru a combate lipsa de 'incredere 'si a spori trasabilitatea s-a dezvoltat ontologia PROV-O \cite{provo}. Aceasta propune un set de clase, propriet'a'ti si restric'tii pentru a reprezenta provenien'ta diferitelor date generate de diferite procese 'in anumite contexte. 'In acest context, am identificat c\ia teva ontologii disponibile utilizatorilor pentru acest domeniu.
+
+
+ 
+ DMOP~\cite{KeetTheOntology} este o schem'a destinat'a optimiz'arii procesului de data mining. Aceast'a implementare dore'ste s'a pun'a la dispozi'tie suport pentru etapele de luare a deciziilor care au un impact direct asupra a ceea ce rezult'a 'in urma procesului de descoperire al cuno'stin'telor. Cuprinde selec'tia algoritmului 'si selec'tia modelului, focus\ia ndu-se pe sarcini care nu necesit'a c'autarea altor metode alternative: selectarea feature-urilor 'si 'inv'a't'are. O alt'a func'tionalitate a DMOP este analiza metadatelor care descriu 'inv'a't'area pentru a observa modele, 'si astfel a 'imbun'at'a'ti procesul. Ontologia DMOP este structurat'a pentru a cuprinde activit'a'ti specifice pentru data mining, cum ar fi algoritmi, modele, fluxuri de date 'si task-uri. Analiza datelor cuprinse de DMOP poate fi utilizat'a pentru a 'imbun'at'a'ti predic'tiile.
+ 
+ 
+ O ontologie care sus'tine generealizarea 'si interpretabilitatea este Expose ~\cite{PDFExperiments}. Aceasta este construit'a pentru a cuprinde experimente 'si fluxuri ale proceselor 'intr-un mod standardizat, independent, pentru a putea fi reutilizate. Aceasta descrie experimente petru machine learning, c'at 'si analiza algoritmilor de 'inv'a'tare. Expose este dezvoltat'a 'in limbajul specfic ontologiilor, OWL-DL 'si se concentreaz'a pe algoritmi superviza'ti pentru clasificare. Expose este construit'a pe baza OntoDM 'si este utilizat'a 'in cadrul libr'ariei OpenML, aduc\ia nd ca serviciu principal o cale de structurare a datelor. Expose completeaz'a celelalte ontologii existente: OntoDM 'si DMOP.
+
+ 
+ 
+ MEX Vocabulary~\cite{Esteves2015MEXVocabulary} este o ontologie care 'incorporeaz'a caracteristici ale PROV-O pentru a descrie experimente generale de ale algoritmilor de machine learning, m'asur'atori pentru clasificare, regresie 'si clustering, c'at 'si m'asur'atori statistice. A fost dezvoltat'a pentru a acoperi golul datorat lipsei specifica'tiilor pentru interschimbarea metadatelor 'inv'a't'arii automate dintre diverse arhitecturi. MEX Vocabulary este alc'atuit din $MEX-Core$, $MEX-Algorithm$ 'si $MEX-Performance$. $MEX-Core$ con'tine entit'a'ti cheie 'in machine learning. Aceasta descrie execu'tii, dar 'si informa'tii privind provenien'ta metadatelor generate. De'tine detalii despre setul de date folosit, faza 'in care s-a efectuat experimentul, configura'tii hardware 'si modelul care cons'ta 'in clasificatorul generat.
+ $MEX-Algorithm$ este destinat reprezent'arii contextului algoritmilor de 'inv'a'tare 'si caracteristicile acestora. Cuprinde clase pentru metoda de 'inv'a'tare care poate fi supervizat'a sau de tip reinfocement, problema de 'inv'a'tare rezolvat'a, numele parametrilor 'si valorile lor asociate, implement'ari 'si referin'te c'atre algoritm. 
+ $MEX-Performance$ pune la dispozi'tie concepte pentru a reprezenta experimentele realizate cu algoritmi de 'inv'a'tare.Cuprinde clase pentru ddescrierea m'asur'atorilor de performan't'a obi'snuite pentru algoritmii de clasificare, clustering, c'at 'si pentru algoritmii de regresie. Pune la dispozi'tie o clas'a pentru m'asur'atori statistice des 'int\ia lnite.
+
+  
+ Onto-DM~\cite{Panov2008OntoDM:Mining} este dezvoltat'a pentru a cuprinde reprezent'ari pentru data mining. Acoper'a defini'tii de baz'a despre data-mining, algoritmi pentru data mining 'si concepte complexe bazate pe constr\ia ngeri. Este construit'a utiliz'nd bunele practici 'in ceea ce prive'ste dezvoltarea ontologiilor. Este alc'atuit'a din alte trei ontologii pentru a curpinde aspecte diferite pentru data mining: $OntoDT$, $OntoDM-core$, $OntoDM-KDD$. $OntoDT$ este dezvoltat'a pentru a cuprinde informa'tii despre tipuri de date. $OntoDM-core$ formalizeaz'a concepte cheie 'in data mining. $OntoDM-KDD$ include detalii despre procesul bazat pe descoperirea informa'tiilor importante.
+ 
+ 
+ 
+De'si s-au f'acut multe demersuri pentru a atinge un nivel de interoperabilitate 'intre abord'arile existente, acestea nu au putut fi realizate complet pentru a acoperi lipsurile. Astfel, s-a dezvoltat ML-Schema ~\cite{CorreaPublioML-Schema:Ontologies}. Aceasta este o ontologie top-level dezvoltat'a pentru a cuprinde informa'tii despre algoritmii de machine learning, cum ar fi implementare, parametrii, detalii software 'si particularit'a'ti ale implemen'tarii. Abstractizeaz'a detalii despre seturile de date utilizate de algoritmi, cum ar fi particularit'a'ti ale setului de date 'si alte caracteristici. 'In ML-Schema este inclus 'si suport pentru experimente, precum specifica'tiile evalu'arii, proceduri 'si m'asur'atori. Pentru dezvoltarea acestei scheme s-au utilizat ontologii existente, cum ar fi Expose, DMOP, MEX 'si OntoDM-core. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Analiz'a 'si Fundamentare Teoretic'a}
@@ -342,7 +578,7 @@ umbrella & NN & substantiv\\[1ex]
 
 \begin{figure}
     \centering
-    \includegraphics[width = 0.4\linewidth]{img/alice_parse.png}
+    \includegraphics[width = 0.5\linewidth]{img/alice_parse.png}
         \caption{Exemplu de arbore sintactic}
     \label{fig:alice_parse}
 \end{figure}
@@ -1248,7 +1484,7 @@ $TQ_{10}$ & algorithm suitable for nonLinearModels \\
 \end{tabular}
 \end{small}
 
-'In tabelul ~\ref{table:performance} pot fi observate rezultatele acestei analize. Datorit'a arhitecturii sistemului, timpul ob'tinerii r'aspunsurilor de la modulul $Translator$ este 'int\ia rziat cu aproximativ 1 secunda. 'In schimb, libr'aria Pellet extrage r'aspunsul 'intr-un timp foarte bun. De'si acesta a fost scopul acestei analize, nu am puut constanta o leg'atur'a clar'a 'intre num'arul de r'aspunsuri 'si timpul necesar execu'tiei 'intreb'arilor.
+'In tabelul ~\ref{table:performance} pot fi observate rezultatele acestei analize. Datorit'a arhitecturii sistemului, timpul ob'tinerii r'aspunsurilor de la modulul $Translator$ este 'int\ia rziat cu aproximativ 1 secunda. 'In schimb, libr'aria Pellet extrage r'aspunsul 'intr-un timp foarte bun. 'In documenta'tia oficial'a \cite{SirinPellet:Reasoner}, E. Sirin aminte'ste 'in sec'tiunea 7 c'a performan'ta reasonerului Pellet nu depinde de dimnesiunea num'arului de date, rezultat pe care l-am ob'tinut 'si noi.
 \begin{table}
 \caption{Performan'ta sistemului}
 \centering                          % tabel centrat 
@@ -1274,7 +1510,6 @@ $TQ_10$ & 6 & 2057 & 4 & 8 & 0 & 2083 \\[1ex]
   % titlul tabelului
 \label{table:performance}                % \label{table:nonlin} introduce eticheta folosita pentru referirea tabelului in text; referirea in text se va face cu \ref{table:nonlin}
 \end{table}
-
 'In urma unei analize mai profunde 'si separate a $Translatorului$ am ob'tinut rezultatele din tabelul ~\ref{table:performance_tr}. 
 \begin{table}
 \caption{Performan'ta modulului $Translator$}
@@ -1304,19 +1539,109 @@ $TQ_10$ & 6 & 2 & 0 & 32 \\[1ex]
 
 
 Acestea de confirm'a faptul c'a transmisia datelor dintre $Translator$ 'si $Reasoning\ Service$ dureaz'a mult, dar ne arat'a 'sii o leg'atur'a 'intre numarul de rezultate ob'tinute de RDFLib 'si timpul de execu'tie pentru ob'tinerea acestora. Se poate observa c'a timpul scade odat'a cu cre'sterea num'arului de rezultate.
+
+
+
+\section{Validare}
+
+Sec'tiunea de validare cuprinde o descriere a felului 'in care au fost 'indeplinte cerin'tele stabilite ale aplica'tiei. 'In sistem se realizeaz'a cu succes utilizarea limbajului natural pentru a exprima o cerin't'a. Prin intermediul unui limbaj de interogare se va interoga ontologia pentru a ob'tine r'aspunsul aferent. Sistemul implementeaz'a dou'a metode de interogare prin care utilizatorul poate s'a solicite r'aspunsul. Aplica'tia construit'a ofer'a posibilitatea de a vizualiza toate elementele ontologiei, prin intermediul unei ferestre speciale. 'In Anexa B este prezentat 'intregul set de 'intreb'ari pe care utilizatorul le poate adresa sistemului. 'In cadrul dezvolt'arii acestei aplica'tii, accentul a fost pus pe func'tionalitate, 'si mai pu'tin pe dezvoltarea unui set de 'intreb'ari extrem de cuprinz'ator. Chiar 'si 'in aceste cazuri, 'intreb'arile acoper'a cea mai mare parte a informa'tiilor ontologiei.
+
+Prin devoltarea acestui sistem, cerin'ta nonfunc'tional'a de a avea un agent $explicativ$ este satisf'acut'a prin modul de realizat'a prin func'tionalit'a'tile alese. $Securitatea$', {\it toleran'ta\ la\ e'sec} 'si {\it utilizabilitatea} sunt cuprinse de procesul de dezvoltare.
+
+
+{\bf Utilizabilitate}
+
+Aceast'a cerin'ta este satisf'acut'a printr-o interfa'ta simpl'a, prezentat'a 'in ~\ref{fig:ui1}, ce poate fi accesat'a 'in mediul online. Datorit'a formul'arii cerin'tei 'in limbaj natural, utilizatorul nu are nevoie de training pentru utilizarea sistemului. Editarea interog'arii permite flexibilitate 'in utilizabilitate, astfel clientii mai avansa'tii pot interoga ontologia utiliz\ia nd interog'ari SPARQL. Pentru a avea o vedere de ansamblu asupra con'tinutului ontologiei, utilizatorii pot vizualiza elementele acesteia prin intermediul unei pagini prezentat'a in figura ~\ref{fig:ui2}.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.65 \linewidth]{img/pg1_cut.png}
+        \caption{Pagina pentru adresarea 'intreb'arilor}
+    \label{fig:ui1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.65 \linewidth]{img/ui2.png}
+        \caption{Pagina pentru explorarea ontologiei}
+    \label{fig:ui2}
+\end{figure}
+
+
+{\bf Toleran'ta la e'sec}
+
+Pentru a permite o experien't'a c\ia t mai bun'a 'in interac'tiunea cu agentul explicativ, sistemul este implementat astfel 'inc\ia t s'a aten'tioneze utilizatorul 'in cazurile 'in care realizeaz'a opera'tii care con'tin date defectuoase. Pentru cazurile 'in care field-ul pentru 'intrebare sau field-ul pentru interogare sunt goale, butoanele sunt dezactivate 'si utilizatorul nu poate face nicio ac'tiune. Se trateaz'a 'si cazurile 'in care 'intrebarea nu este formulat'a corect sau interogarea SPARQL nu este valid'a, pentru aceste situa'tii sistemul return'and aten'tion'ari pentru a semnala provenien'ta e'secului.
+
+{\bf Securitate}
+
+Pentru 'indeplinirea obiectivului de securitate am considerat restric'tionarea interog'arilor SPARQL la opera'tii de vizualizare. A'sadar, utilizatorul nu poate s'a realizeze opera'tii de inserare, 'stergere sau alte modific'ari asupra datelor. De asemenea, accesul la ontologie este restric'tionat, caz 'in care clientul poate numai s'a vizualizeze numai clasele, indivizii 'si rolurile con'tinute de ontologie.  
+
+{\bf Explicativ}
+
+Cerin'ta ca sistemul s'a fie explicativ este 'indeplinit'a prin introducerea pasului suplimentar 'in care utilizatorul poate s'a vizualizeze 'si s'a editeze interogarea SPARQL, astfel 'in'teleg\ia nd modul de extragere al r'aspunsului. Prin acest fapt, sistemul nu este considerat o cutie neagr'a 'in care intrarea este o 'intrebare, iar ie'sirea este un r'aspuns. Utilizatorul poate s'a foloseasc'a 'si pagina pentru solicitarea detaliilor ontologiei pentru a 'intelege provenien'ta r'aspunsului.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Manual de Instalare 'si Utilizare}
 
+Capitolul de fa't'a cuprinde 'in prima parte instruc'tiuni pentru instalarea sistemului 'si aducerea 'in starea de rulare. A doua parte con'tine un manual de utilizare destinat utilizatorilor, pentru a cunoa'ste modalitatea de folosire a sistemului
+
 \section{Instalarea sistemului}
+
+Instalarea sistemului presupune trei pa'si prin care se va ob'tine sistemul activ, gata pentru a fi utilizat de clien'ti. Necesit'a un set de prerechizite, iar apoi const'a 'in pornirea serverului 'si a interfe'tei utilizator. Sistemul este disponibil 'intr-un repository de git\footnote{ }. Ace'sti pa'si sunt descri'si 'in continuare:
+
+\begin{itemize}
+    \item Primul pas const'a 'in asigurarea c'a uneltele necesare utiliz'arii aplica'tiei sunt instalate pe sistemul de dezvoltare. Aplica'tia este construit'a din trei module separate ce au nevoie, fiecare de o libr'arie instalat'a pe sistem pentru a func'tiona. Interfa'ta a fost dezvoltat'a 'in Angular 'si necesit'a versiunea 11.13.0 de NodeJS sau mai mare. Serverul pentru reasoning este dezvoltat 'in Java 10.0.3, dar versiunea poate s'a difere, c'at timp este mai mare de 8. Pentru func'tionarea corespunz'atoare a modulului pentru translatarea din limbaj natural 'in limbaj de interogare SPARQL este necesar'a versiunea 2.17.15 de Python. De asemenea, trebuie s'a existe suport pentru framework-ul Quepy. Pentru acesta, trebuie urm'arit tutorialul\footnote{Quepy installation https://quepy.readthedocs.io/en/latest/installation.html}.
+    \item Al doilea pas const'a 'in pornirea serverului. Acesta a fost dezvoltat cu ajutorul mediului de dezvoltare IntelliJ. Pentru pornirea serverului, se va deschide proiectul cu IntelliJ sau cu orice alt mediu de dezvoltare specific. Se acceseaz'a $ChatbotApplication$ 'si se ruleaz'a ca aplica'tie Spring Boot. 'In lipsa unui IDE, se va identifica fi'sierul .jar al proiectului 'si se va rula cu comanda {\it java\ -jar\ target/chatbot-<version>-SNAPSHOT.jar}. Pentru succesul 'in rularea serverului, trebuie ca portul 8080 s'a fie disponibil.
+    \item Pentru pornirea interfe'tei utilizator, se deschide o instan'ta de Intellij cu proiectul interfe'tei. Este necesar s'a se ruleze ca $Angular\ CLI\ Server$. 
+\end{itemize}
+
+Odat'a parcur'si ace'sti pa'si, sistemul este disponibil 'in browser la adresa $http://localhost:4200/$. Pentru cazul 'in care aplica'tia va fi disponibil'a pe un server public, utilizatorii vor avea nevoie s'a acceseze numai interfa'ta utilizator prin adresa pus'a la dispozi'tie de acel provider.
+
 \section{Manual de utilizare}
 
+Agentul explicativ pentru 'inv'a'tarea automat'a a fost dezvoltat pentru ca utilizatorii s'a in'teleag'a conceptele de baz'a ale func'tion'arii domeniului. Sistemul st'a la dispozi'tia utilizatorului pentru a r'aspunde la 'intreb'arile adresate 'in limbaj natural. Pentru utilizarea sistemului, utilizatorii trebuie s'a dispun'a de un browser web. 
 
+Utilizarea paginii pentru ob'tinerea r'aspunsurilor prin limbaj natural ce poate fi observat'a 'in figura ~\ref{fig:ui1} se face prin urm'atorii pa'si:
+\begin{itemize}
+    \item Utilizatorul va accesa tab-ul denumit $Ask\ a\ question$.
+    \item Introducerea 'intreb'arii 'si ac'tionarea butonului $Ask$. 'Intreb'arile trebuie s'a fie din lista propus'a din Anexa B. 
+    \item Vizualizarea sau modificarea interog'arii SPARQL din caseta destinat'a. Utilizatorii pot vizualiza interogarea, iar cei mai experimenta'tii o pot modifica 'tin\ia nd cont de regulile de scriere ale interog'arilor SPARQL.
+    \item Ac'tionarea interog'arii cu Pellet sau RDFLib 'si vizionarea rezultatului. Utilizatorul are la dispozi'tie dou'a butoane $RunWithPellet$ 'si $RunWithRDFLib$ pe care le paote ac'tiona.
+\end{itemize}
+
+Sistemul pune la dispozi'tie 'si o pagin'a 'in care utilizatorul poate vedea ce elemente de'tine ontologia, observat'a 'in figura ~\ref{fig:ui2}. Pentru utilizarea acestei pagini, clientul va accesa tab-ul $Ontology\ Details$. 'In aceast'a fereastr'a, va ac'tiona butonul $Individuals$ pentru a ob'tine o list'a cu to'ti indivizii ontologiei. Butonul $Classes$ determin'a afi'sarea unei liste cu conceptele ontologiei, iar butonul $Properties$ va afis'a toate propriet'a'tile ontologiei.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Concluzii}
+'In prima parte a acestui capitol se prezint'a o retrospectiv'a asupra sistemului, pun'and 'in valoare modul de r'aspuns la 'intreb'arile adresate 'in limbaj natural. O analiz'a a dezvolt'arilor ulterioare ce pot 'imbun'at'a'ti sistemul de r'aspuns vor fi prezentate 'in partea a doua a acestui capitol.
 
 \section{Contribu'tii 'si realiz'ari}
+Agentul cu rol 'in explicarea 'inv'at'arii automate are la baz'a o ontologie ce poate fi interogat'a prin intermediul 'intreb'arilor 'in limbaj natural translatate 'in SPARQL. Acesta dore'ste acomodarea utilizatorului cu domeniul 'inv'a't'arii automate pentru a diminua ne'increderea 'si scepticismul 'in sistemele automate. 'In dezvoltarea acestui proiect am contribuit cu:
+
+\begin{itemize}
+    \item {\it Dezvoltarea\ unei\ arhitecturi\ ce\ integreaz'a\ explicarea\  'in\ sistemele\ de\ r'aspundere\ la\ 'intrebari} -  Arhitectura propus'a este distribuit'a 'in microservicii, fiecare component'a a sa fiind responsabil'a de executarea unei fun'ctionalit'ati. Aceast'a arhitectur'a se prezint'a ca o arhitectur'a pe nivele, avantajul ei fiind c'a modulele sunt independente 'si pot fi 'intre'tinute cu u'surin't'a. Dat'a fiind nevoia de explicare a procesului de ob'tinere a unui r'aspuns, c\ia t 'si de a m'ari transparen'ta 'in aplica'tie, arhitectura este adaptat'a pentru a face fa't'a acestor cerin'te. Utilizatorul este implicat 'in procesul de extragere a r'aspsunsului, fiind con'stient de pa'sii necesari. Ontologia 'isi expune elementele pentru ca utilizatorul s'a 'in'teleag'a provenien't'a r'aspunsului.
+
+    
+    \item {\it Transformarea\ libr'ariei\ Pellet\ pentru\ a\ func'tiona\ ca\ server} - Datorit'a necesit'a'tii de a avea un sistem care 'i'si expune func'tionalit'a'tile online, dat fiind vasta r'asp'andire a aplica'tiilor web, am integrat un modul Spring Boot 'in libr'aria Pellet. Aceast'a strategie are ca principal avantaj men'tinerea modularit'a'tii bazat'a pe limbaj 'si func'tionalit'a'ti. Un alt avantaj major este capabilitatea de expunere a func'tionalit'a'tilor reasonereului Pellet ca endpoint-uri. Acest lucru reprezint'a o facilitate general'a, ce poate fi folosit'a  
+  
+    \item {\it Extinderea\ framework-ului\ Quepy\ pentru\ a\ permite\ opera'tii\ cu\ operatori\ logici} - Pentru a acoperi nevoia translat'arii din limbaj natural 'in limbaj de interogare SPARQL am implementat un proiect Quepy. Acesta cuprinde o abstractizare a elementelor ontologiei, dar 'si reguli de parsare 'si identificare a 'intreb'arilor care sunt posibile a fi puse. 'Intreb'arile au fost selectate 'si dezvoltate pentru a cuprinde 'si cerin'te mai complexe, c'at 'si probleme des 'int\ia lnite pe forumuri. La acest mod de procesare a limbajului ntural, am extins framework-ul Quepy pentru a suporta operatorii logici $and$, $or$ 'si $not$, c\ia t 'si op'tiunea $filter$ de filtrare a rezultatelor 'in func'tie de o variabil'a. Aceste lucruri ad'augate reprezint'a noi utilit'a'ti care permit implementarea unor 'intreb'ari mult mai complexe. La baza acestuia, Quepy nu de'tinea facilit'a'tile de utilizare a operatorilor logici. Implementarea acestora reprezint'a, 'in mod firesc, o noutate.
+    
+    \item {\it Proiectarea\ 'si\ dezvoltarea\ unei\ ontologii\ care\ sus'tine\ explicarea\ func'tion'arii\ sistemului\ inteligent} -  Ontologia dezvoltat'a este bazat'a pe schemele existente, dar reprezint'a o noutate 'in abordare 'si con'tinut. Aceasta 'inglobeaz'a o structurare a algoritmilor 'si parametrilor acestora, dar implementeaz'a 'si suport pentru avantajele 'si dezavantajele acestora. Ontologia cuprinde 'si provenient'a datelor. Prin aceste lucruri, nu numai c'a abordeaz'a probleme des 'int\ia lnite, dar 'si 'incearc'a s'a ofere o explica'tie 'in ceea ce prive'ste sursa informa'tiilor din aceasta.
+\end{itemize}
+
+Sistemul prezentat 'in aceasta lucrare ofer'a utilizatorului posibilitatea de a pune 'intreb'ari variate 'in limbaj natural 'si de a fi integrat 'in procesul de ob'tinere al r'aspunsului, fiindu-i permis s'a editeze interogarea. Prin transparen'ta ontologiei, utilizatorul are o vedere de ansamblu a 'intregului sistem.
 \section{Dezvolt'ari ulterioare}
+
+Agentul explicativ pentru machine learning permite 'in prezent doar 'intreb'ari definite 'si tratate 'in modulul de translatare. Astfel c'a setul de 'intreb'ari permise este limitat 'si sitemul ofer'a un r'aspuns numai 'in cazul unei 'intreb'ari valide. Ca dezvoltare ulterioar'a, trebuie tratat acest aspect prin extinderea proiectului Quepy pentru a permite mai multe 'intreb'ari. O alt'a problem'a referitoare la 'intreb'ari este privitoare la 'indivizii insera'ti 'in cerin'te. Ace'stia nu sunt verifica'ti de c'atre modulul de translatare care returneaz'a o interogare valid''a con'tin\ia nd un individ care nu exist'a. Identificarea gre'selii este f'acut'a doar 'in momentul 'in care interogarea este rulat'a cu un reasoner. Modulul de translatare nu permite gre'seli minore ale cuvintelor, cum ar fi litere lips'a. Urm'atoarele versiuni trebuie s'a fie capabile de a cuprinde mai multe 'intreb'ari, c'at 'si verificarea indivizilor 'si flexibilitate 'in erori de scriere.
+
+Ontologia pe care se bazeaz'a agentul explicativ acoper'a o mare parte din algoritmii de 'inv'a'tare automat'a. De'si de'tine diverse informa'tii referitoare la algoritmi, aceasta trebuie extins'a, fiind 'in prezent numai un demonstrativ. Aceasta poate abstractiza 'in viitor mai multe aspecte teoretice ale 'inv'a't'arii automate, nu numai algoritmi 'si propriet'atile lor, respectiv avantaje. Ontologia poate s'a cuprind'a 'in viitor 'si alte no'tiuni care sunt de interes la interview-uri. Acest fapt ar face aplica'tia 'si mai robust'a, put'and s'a ofere mai mult'a 'incredere celor care o utilizeaz'a 'in scopuri educative.
+
+Pentru dezvoltarea continu'a a aplica'tiei, aceast ar putea cuprinde 'in viitor 'si alte resurse pentru sus'tinerea 'intreb'arilor. 'In prezent, num'arul de 'intreb'ari este limitat, la fel ca informa'tiile dispoibile pentru a r'aspunde la acestea. Este neccesar ca urm'atoarele facilit'a'ti s'a fie axate pe ad'augarea unei noi surse de extragere a r'aspunsurilor, cum ar fi cele care utilizeaz'a similaritate semantic'a pentru a da curs unei cerin'te. Obiectivul dezvolt'arii 'in acest sens este acoperirea a c\ia t mai mult din domeniul ales.
+
+'In momentul de fa't'a modulul responsabil pentru translatarea din limbaj natural 'in SPARQL nu este disponibil ca server pentru a rezolva cerin'tele primite. De'si toate apelurile sunt centralizate la un singur server, acesta func'tioneaz'a ca intermediar 'intre interfa'ta grafic'a 'si translator. Toate apelurile primite din interfa'ta utilizator sunt preluate de c'atre serverul principal 'si cele care necesit'a aten'tia translatorului sunt direc'tionate c'atre acesta. Serviciile puse la dispozi'tie de translator sunt script-uri care sunt rulate, de'si pentru execu'tia acestora este nevoie de multe alte fi'siere. Arhitectura prezent'a introduce numeroase 'int\ia rzieri la fiecare cerere de translatare, c'at 'si la fiecare cerere de a r'aspunde la interogare cu RDFLib. Ca dezvoltare ulterioar'a este necesar'a transformarea translatorului 'in serviciu web, capabil de a prelua direct apelurile care 'ii sunt adresate, f'ara a exista necesitatea de a fi intermediate prin alt'a aplica'tie. Schimbarea translatorului 'in server web va rezolva problema 'int\ia rzierilor 'si va face aplica'tia mai rapid'a 'si mai pl'acut de utilizat.
+ 
+Privind din perspectiv'a educativ'a, agentul explicativ 'impa'rt'a'se'ste informa'tii despre 'inv'a'tarea automat'a, unui grup de utilizatori interesa'ti. Pentru a 'imbun'at'a'ti acest proces 'si pentru a se studia c\ia t de valoroase 'si bine reprezentate sunt informa'tiile transmise, exist'a posibilitatea de a ad'auga un modul pentru testarea persoanelor care utilizeaz'a sistemul. Utilizatorul va accesa modul de testare 'in care se pot pune 'intreb'ari cu r'aspuns simplu, sistemul verific\ia nd corectitudinea r'aspunsurilor. O astfel de extindere poate fi realizat'a, arhitectura prezent'a permi't\ia nd extinderea 'in acest sens. O alt'a imbun'at'a'tire, privind mult mai 'in viitor, poate fi crearea unui model al cuno'stin'telor utilizatorului pe baza test'arii 'si prezentarea informa'tiilor viitoare 'in a'sa fel 'inc\ia t s'a se corecteze gre'selile. Pentru o astfel de abordare, va fi necesar'a crearea conturilor pentru utilziatori pentru a re'tine progresul. Astfel de dezvolt'ari privesc aplica'tia pe termen lung 'si ar trebui luate 'in considerare pentru a 'imbun'at'a'ti experien'ta clien'tilor 'in 'in'telegerea 'inv'a't'arii automate 'si reducerea scepticismului. 
 
 
 %\addcontentsline {toc}{chapter}{Bibliography} 
@@ -1325,6 +1650,5 @@ Acestea de confirm'a faptul c'a transmisia datelor dintre $Translator$ 'si $Reas
 
 \include{apendix}
 
-\textcolor{green}{lista completa cu intrebarile permise}
 
 \end{document}
